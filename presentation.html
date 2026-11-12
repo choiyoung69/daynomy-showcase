@@ -1,0 +1,2130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0c0c0d"><meta name="color-scheme" content="dark">
+<title>DAYNOMY — 세상의 소식을, 내 투자의 맥락으로.</title>
+<meta name="description" content="흩어진 뉴스와 시장의 흐름을 모아, 내 포트폴리오와 연결합니다. DAYNOMY의 AI 분석, 사용법과 팀을 만나보세요.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='8' width='32' height='32' fill='%232563eb'/%3E%3Ctext x='7' y='24' fill='white' font-family='sans-serif' font-size='23'%3ED%3C/text%3E%3C/svg%3E">
+<!--
+Pretendard font license
+Copyright (c) 2021, Kil Hyung-jin (https://github.com/orioncactus/pretendard),
+with Reserved Font Name Pretendard.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://scripts.sil.org/OFL
+
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting — in part or in whole — any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+-->
+<style>
+@font-face{font-family:'Geist';src:url('assets/19f9c92546aa300c.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}@font-face{font-family:"Pretendard";src:url("assets/9599f12fd42fc0bc.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+:root{--bg:#0c0c0d;--ink:#ededeb;--mute:#8a8a88;--pill:#1c1c1e;--pill-h:#262628;--line:#232325;--blue:#8eafff;--ease:cubic-bezier(.16,1,.3,1);font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:20px}html,body{min-height:100%;overflow-x:clip;-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer;border:0}a{color:inherit;text-decoration:none}button,a{touch-action:manipulation}button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--blue);outline-offset:5px}button:disabled{cursor:default}::selection{background:#36498b;color:white}.serif{font-family:'Pretendard',sans-serif;font-weight:300}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.skip{position:fixed;left:16px;top:-100px;z-index:100;background:#eee;color:#111;padding:14px}.skip:focus{top:16px}.view{position:relative;background:var(--bg)}#news{height:100svh;min-height:720px;overflow:hidden}#ai{height:calc(100svh + var(--ai-travel,3400px));border-top:1px solid var(--line)}.ai-stage{position:sticky;top:0;height:100svh;min-height:620px;overflow:hidden}#guide{border-top:1px solid var(--line)}.canvas-wrap{position:absolute;inset:0;touch-action:pan-y}.canvas-wrap canvas{display:block;width:100%;height:100%}.view-head{position:absolute;z-index:4;top:28px;left:38px;right:38px;display:flex;align-items:center;justify-content:space-between;pointer-events:none}.view-head a{pointer-events:auto}.brand{font-size:19px;font-weight:650;letter-spacing:-.045em}.brand b{color:var(--blue);font-weight:400}.top-link{font-size:11px;letter-spacing:.02em;color:#b9b9b6;display:inline-flex;gap:19px;align-items:center}.top-link:hover{color:white}.top-middle{font-size:10px;letter-spacing:.19em;color:var(--mute);position:absolute;left:50%;transform:translateX(-50%)}.corner-note{position:absolute;left:38px;bottom:27px;font-size:10px;color:#737374}.edition{position:absolute;right:38px;bottom:27px;color:#737374;font-size:10px}.pill{display:inline-flex;align-items:center;justify-content:center;gap:20px;border-radius:30px;padding:12px 20px;background:#ededeb;color:#111;font-size:12px;font-weight:500;transition:background .3s var(--ease)}.pill:hover{background:#b9cdff}.pill.outline{background:transparent;border:1px solid #414144;color:#ededeb}.pill.outline:hover{border-color:#a5baff;background:#12182a}.text-link{display:inline-flex;gap:18px;align-items:center;font-size:12px;color:#c1c1bd}.text-link:hover{color:#9ab9ff}
+.hero-copy{position:absolute;top:13.2%;left:8.9%;z-index:3;pointer-events:none;max-width:520px;opacity:0}.eyebrow{font:400 11px 'Pretendard';letter-spacing:.15em;color:#8a8a88;text-transform:uppercase}.hero-copy h1{font-size:clamp(32px,3.65vw,58px);font-weight:450;line-height:1.28;letter-spacing:-.06em;word-break:keep-all;margin-top:22px}.hero-copy h1 em{font-family:'Pretendard',sans-serif;font-weight:300;color:var(--blue);font-style:normal;letter-spacing:-.025em}.hero-copy .hero-action{pointer-events:auto;margin-top:26px}.intro-word{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;font-size:45px;font-weight:600;letter-spacing:-.06em;z-index:2}.load-count{position:absolute;left:0;right:0;bottom:93px;text-align:center;font:normal 16px 'Pretendard';color:var(--mute)}.intro-side{position:absolute;top:50%;font-size:12px;color:#a0a09e;overflow:hidden;pointer-events:none}.intro-side.left{left:9%}.intro-side.right{right:9%}.intro-side span{display:block}.hover-caption{position:absolute;bottom:132px;left:0;right:0;display:flex;justify-content:center;gap:9px;align-items:center;font-size:12px;pointer-events:none}.hover-caption span{color:var(--mute);font:normal 14px 'Pretendard'}.example-note{position:absolute;right:38px;top:87px;color:#68686d;font-size:10px}.overview{position:absolute;bottom:80px;width:min(600px,calc(100% - 40px));left:50%;transform:translateX(-50%);visibility:hidden;opacity:0;z-index:8}.overview header{display:flex;justify-content:space-between;align-items:start;gap:25px}.overview h2{font-size:16px;font-weight:500;line-height:1.5}.overview .meta{font:14px 'Pretendard';color:var(--mute);margin-top:6px}.close-small{background:var(--pill);font-size:12px;height:30px;padding:0 12px;border-radius:5px}.overview>p{color:#b9b9b6;font-size:13px;line-height:1.8;margin-top:17px;word-break:keep-all}.tags{display:flex;gap:6px;margin-top:14px}.tags span{font-size:10px;background:var(--pill);padding:6px 9px;border-radius:4px;color:#aaa}.pointer-bubble{position:fixed;z-index:40;left:0;top:0;pointer-events:none;background:#ededebeb;color:#141414;padding:7px 10px;font-size:11px;border-radius:4px;opacity:0}.view-bubble{height:64px;width:64px;border-radius:50%;display:grid;place-items:center;font:normal 16px 'Pretendard'}
+.ai-controls{position:absolute;right:38px;bottom:98px;display:flex;gap:8px}.round-button{border:1px solid #36363c;background:#16161988;border-radius:50%;width:38px;height:38px;color:#a3a3ad;display:grid;place-items:center;font-size:17px}.round-button:hover{background:#282834;color:white}
+.guide-scroll{height:auto;overflow:visible}.guide-inner{padding:0 38px}.guide-intro{padding:160px 0 72px;max-width:1320px;margin:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:30px}.guide-intro h1{font-size:clamp(34px,4.8vw,70px);font-weight:400;line-height:1.2;letter-spacing:-.055em;margin-top:20px}.guide-intro h1 em{font:normal 1em 'Pretendard';color:var(--blue)}.guide-intro p{color:#8a8a88;max-width:260px;font-size:13px;line-height:1.9;padding-bottom:5px}.guide-gallery{position:relative;height:560px;max-width:1440px;margin:0 auto}.guide-gallery canvas{position:absolute;inset:0}.guide-hit-list{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:start;pointer-events:none}.guide-hit-list button{pointer-events:auto;width:100%;aspect-ratio:16/9;background:transparent;color:transparent;border-radius:6px}.guide-hit-list button:focus-visible{background:#8eafff20}.guide-progress{position:sticky;top:0;z-index:7;margin:0 -38px;background:#0c0c0de8;backdrop-filter:blur(14px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:center;gap:40px;padding:15px 20px}.guide-progress a{font-size:11px;color:#6d6d75;white-space:nowrap}.guide-progress a.active{color:#d0dcff}.guide-progress a span{font:normal 15px 'Pretendard';margin-right:7px}.guide-step{max-width:1280px;margin:auto;padding:130px 0 115px;border-bottom:1px solid var(--line);scroll-margin-top:55px}.step-heading{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:45px}.step-heading h2{font-size:clamp(30px,3.25vw,46px);font-weight:400;letter-spacing:-.055em;line-height:1.3;margin-top:22px;white-space:pre-line}.step-heading .step-description{font-size:14px;line-height:1.9;max-width:330px;color:#a2a2a4;margin-left:auto;word-break:keep-all}.step-index{display:flex;gap:20px;align-items:center;font-size:11px;color:#74747c}.step-index .number{font:normal 24px 'Pretendard';color:#b8c8ec}.step-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:50px;align-items:center}.step-layout.reverse{grid-template-columns:250px minmax(0,1fr)}.step-layout.reverse .screen-stage{order:2}.step-layout.reverse .step-instructions{order:1}.screen-stage{min-width:0}.screen-frame{position:relative;overflow:hidden;border:1px solid #303038;background:#0c0c0f;border-radius:9px;box-shadow:0 25px 80px #0004}.screen-frame img{display:block;position:absolute;max-width:none;pointer-events:none}.screen-label{display:flex;align-items:center;gap:9px;margin-top:18px;font-size:11px;color:#a9b7d8}.screen-label:before{content:'';height:4px;width:4px;border-radius:50%;background:#8eafff}.step-instructions ol{list-style:none;counter-reset:step;display:grid;gap:24px}.step-instructions li{counter-increment:step;color:#b9b9bd;font-size:12px;line-height:1.8;padding-left:28px;position:relative;word-break:keep-all}.step-instructions li:before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:2px;font:11px 'Pretendard';color:#666672}.step-instructions .note{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:10px;line-height:1.8;color:#71717d}.step-instructions .text-link{margin-top:24px;font-size:11px}.guide-cta{max-width:1280px;margin:auto;padding:100px 0;display:flex;align-items:center;justify-content:space-between;gap:30px}.guide-cta h2{font-size:clamp(27px,3vw,40px);font-weight:400;letter-spacing:-.045em;line-height:1.45}.guide-cta h2 small{display:block;color:#8a8a88;font-size:13px;font-weight:400;margin-top:14px}.team-section{max-width:1280px;margin:auto;padding:90px 0 130px;border-top:1px solid var(--line);scroll-margin-top:30px}.team-top{display:flex;justify-content:space-between;align-items:center;color:#74747c;font-size:10px;letter-spacing:.12em}.team-section h2{font-family:'Pretendard',sans-serif;font-weight:300;font-size:clamp(43px,9.4vw,130px);letter-spacing:-.045em;text-align:center;margin-top:45px;line-height:1.1}.team-section h2 em{color:#a8baff;font-weight:300}.members-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:55px}.member{text-align:center;min-width:0}.portrait-link{position:relative;isolation:isolate;aspect-ratio:1;width:100%;padding:0;background:transparent;cursor:grab;touch-action:pan-y}.portrait-link[data-portrait-state=dragging]{cursor:grabbing}.portrait-link img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}.portrait-canvas{position:absolute;left:-35%;top:-35%;width:170%;height:170%;pointer-events:none;visibility:hidden}.member h3{margin-top:22px;font-size:25px;font-weight:500;letter-spacing:-.04em}.member-name{font-size:12px;color:#8a8a88;margin-top:9px}.github-button{display:inline-flex;justify-content:center;gap:14px;align-items:center;font-size:11px;border:1px solid #35353b;border-radius:30px;margin-top:21px;padding:11px 18px;min-height:44px;transition:background .3s}.github-button:hover{background:#26262f}.team-footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#6f6f78;font-size:10px}.glass-edge{position:absolute;left:0;right:0;height:14px;z-index:8;pointer-events:none;backdrop-filter:blur(3px);background:linear-gradient(#ffffff03,transparent)}.glass-edge.top{top:0}.glass-edge.bottom{bottom:0;transform:rotate(180deg)}
+dialog{position:fixed;inset:0;margin:auto;max-width:min(1100px,calc(100vw - 32px));max-height:88dvh;overflow:auto;border:1px solid #373740;border-radius:10px;padding:25px;background:#151519;color:var(--ink)}dialog::backdrop{background:#080809db;backdrop-filter:blur(14px)}.dialog-top{display:flex;justify-content:space-between;gap:30px;align-items:start;margin-bottom:20px}.dialog-top h2{font-size:19px;font-weight:500}.dialog-top p{color:#81818a;font-size:12px;margin-top:7px}.lightbox-media{width:100%;max-height:59vh;object-fit:contain;background:#0c0c0d;border-radius:6px}.dialog-description{font-size:13px;line-height:1.8;color:#aaaab2;margin-top:20px;max-width:70ch}.dialog-steps{display:flex;gap:25px;flex-wrap:wrap;margin-top:18px;font-size:12px;line-height:1.8;color:#9e9ea9;padding-left:19px}.dialog-steps li{max-width:30%}.dialog-action{margin-top:22px;display:flex;justify-content:space-between;gap:15px;align-items:center}.status-message{position:absolute;bottom:140px;left:20px;right:20px;text-align:center;font-size:12px;color:#adadb9;z-index:5}.fallback-news{position:absolute;inset:30% 10% 20%;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;overflow:auto;z-index:2}.fallback-news a{background:#171922;padding:15px;color:#b7bfd3;text-align:left;font-size:12px;line-height:1.6}.fallback-news a small{color:#778bad;display:block;margin-bottom:8px}.fallback-ai{max-width:620px;position:absolute;inset:170px 24px 100px;margin:auto;overflow:auto;line-height:1.9;color:#bcbcc6}.fallback-ai h2{font-size:32px;font-weight:400;margin-bottom:20px}.fallback-ai p{margin-bottom:20px}
+.guide-inner{overflow-x:clip}
+@media(min-width:1600px){.hero-copy{top:18%}}
+@media(max-width:1024px){.intro-side{display:none}.hero-copy{top:13%;left:7%;max-width:380px}.hero-copy h1{font-size:42px}.hero-copy .hero-action{margin-top:18px}.guide-hit-list{grid-template-columns:repeat(2,1fr)}.guide-intro{padding-top:135px}.guide-gallery{height:660px}.step-layout,.step-layout.reverse{grid-template-columns:minmax(0,1fr) 210px;gap:25px}.step-layout.reverse .screen-stage{order:0}.step-layout.reverse .step-instructions{order:0}.step-heading{gap:30px}.members-grid{gap:14px}.member h3{font-size:22px}}
+@media(max-width:640px){.view-head{top:22px;left:22px;right:22px}.brand{font-size:17px}.top-link{font-size:10px;gap:9px}.top-middle{display:none}.corner-note{left:20px;bottom:82px;font-size:9px}.edition{display:none}.example-note{right:22px;top:67px;font-size:9px}.hero-copy{top:12%;left:24px;right:24px;max-width:none}.hero-copy h1{font-size:34px;line-height:1.25;letter-spacing:-.055em;margin-top:15px}.hero-copy .hero-action{margin-top:22px}.hero-copy .eyebrow{font-size:9px;letter-spacing:.12em}.hover-caption{bottom:140px;font-size:10px;gap:5px}.hover-caption span{font-size:12px}.overview{bottom:85px;width:calc(100% - 36px)}.overview h2{font-size:14px}.overview>p{font-size:12px;line-height:1.7;margin-top:12px}.tags{margin-top:10px}.tags span{font-size:9px}.ai-controls{right:22px;bottom:100px;gap:6px}.round-button{width:32px;height:32px}.guide-inner{padding:0 22px}.guide-intro{padding:120px 0 45px;display:block}.guide-intro h1{font-size:40px}.guide-intro p{max-width:none;margin-top:22px;font-size:12px}.guide-intro .eyebrow{font-size:10px}.guide-gallery{height:1020px;margin:0 -14px}.guide-hit-list{grid-template-columns:1fr}.guide-progress{margin:0 -22px;gap:0;justify-content:space-between;padding:15px 18px}.guide-progress a{font-size:10px}.guide-progress a span{font-size:13px;margin-right:3px}.guide-step{padding:70px 0 65px}.step-heading{display:block;margin-bottom:28px}.step-heading h2{font-size:32px;margin-top:16px}.step-heading .step-description{font-size:12px;line-height:1.85;margin:20px 0 0;max-width:none}.step-index{gap:14px;font-size:10px}.step-index .number{font-size:22px}.step-layout,.step-layout.reverse{display:flex;flex-direction:column;align-items:stretch;gap:26px}.step-layout.reverse .screen-stage,.step-layout.reverse .step-instructions{order:0}.screen-frame{border-radius:6px}.screen-label{font-size:10px;margin-top:12px}.step-instructions ol{gap:14px}.step-instructions li{font-size:12px}.step-instructions .note{margin-top:18px;padding-top:15px;font-size:10px}.guide-cta{padding:65px 0;display:block}.guide-cta h2{font-size:28px}.guide-cta h2 small{font-size:12px}.guide-cta .pill{margin-top:25px;font-size:11px}.team-section{padding:65px 0 130px}.team-top{font-size:8px;letter-spacing:.06em}.team-section h2{font-size:12vw;margin-top:36px}.members-grid{gap:4px;margin-top:35px}.member h3{font-size:16px;margin-top:15px}.member-name{font-size:10px;margin-top:6px}.github-button{font-size:10px;width:100%;padding:8px 2px;margin-top:15px;gap:3px}.team-footer{font-size:9px;margin-top:34px;flex-direction:column;gap:9px}.dialog-steps{display:block}.dialog-steps li{max-width:none;margin-top:10px}dialog{padding:20px}.dialog-top h2{font-size:17px}.fallback-news{grid-template-columns:repeat(2,1fr);inset:40% 5% 22%}}
+
+.guide-step{max-width:1160px;padding:72px 0;scroll-margin-top:65px}.step-layout,.step-layout.reverse{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(280px,1fr);gap:48px;align-items:center}.step-copy{min-width:0}.step-heading{display:block;margin:0 0 30px}.step-heading h2{font-size:clamp(28px,2.8vw,39px);margin:0;line-height:1.35}.step-heading .step-description{margin:18px 0 0;font-size:14px;line-height:1.85;max-width:none}.screen-stage{width:100%;justify-self:center}#step-analysis .screen-stage{max-width:570px}.screen-surround{padding:12px;background:linear-gradient(145deg,#1d2330,#121318 55%);border:1px solid #2b303b;border-radius:14px}.screen-viewport{overflow:hidden;border-radius:7px}.screen-window{min-width:0;width:100%;background:white;border-radius:7px;overflow:hidden}.screen-frame{border:0;border-radius:0;box-shadow:none;background:white}.screen-frame img{top:0;left:0;width:100%;height:auto}.screen-pin{position:absolute;transform:translate(-50%,-50%);width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:#356be8;color:white;font:600 10px 'Pretendard';border:2px solid white;box-shadow:0 3px 14px #1e45af55}.step-instructions{margin:0}.step-instructions ol{display:grid;grid-template-columns:1fr;gap:20px}.step-instructions li{padding-left:33px;font-size:13px;line-height:1.85}.step-instructions li:before{color:#8faaf5;border:1px solid #38445e;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;top:1px;font-size:10px}.step-actions{display:flex;gap:16px;align-items:center;margin-top:25px}.step-actions .text-link{margin:0;padding:8px 0;background:none;font-size:12px;color:#b5c7f1}.sample-badge{font-size:10px;color:#8996ae}.tags a{font-size:11px;border:1px solid #455474;border-radius:4px;padding:6px 10px;color:#c3d3ff}.hover-caption{padding:0 30px;text-align:center}.hover-caption span{flex-shrink:0}.news-list-content button{line-height:1.8}.guide-intro{padding:100px 0 50px}.guide-intro h1{margin:0}.hero-copy h1{margin-top:0}.team-section h2{margin-top:0}
+.bot-showcase{margin-top:96px;padding-top:48px;border-top:1px solid #2a2b34}.bot-heading{display:flex;justify-content:space-between;gap:32px;align-items:end;margin-bottom:46px}.bot-heading h3{font-size:clamp(25px,3vw,37px);font-weight:400;line-height:1.4;letter-spacing:-.04em;margin-top:18px}.bot-heading p:last-child{max-width:300px;font-size:13px;line-height:1.9;color:#9299a8;word-break:keep-all}.bot-flow{display:grid;grid-template-columns:.9fr 1.05fr 1.2fr;gap:24px;align-items:start}.bot-scene{min-width:0}.bot-scene-label{font-size:11px;letter-spacing:.04em;color:#8b9bb8;margin-bottom:18px}.bot-scene-label span{font:normal 18px 'Pretendard';margin-right:10px;color:#c3d0ee}.coach-welcome{display:flex;align-items:center;flex-direction:column;padding:0}.coach-bubble{position:relative;background:#fff;color:#101218;border:1px solid #e8e8e8;padding:20px 22px;width:100%;max-width:284px;border-radius:12px 12px 4px 12px;box-shadow:0 20px 60px #0002;font-size:14px;line-height:1.7}.coach-bubble:after{content:'';position:absolute;right:44px;bottom:-9px;width:16px;height:16px;background:#fff;transform:rotate(45deg)}.coach-bubble strong{font-size:14px}.coach-bubble p{font-size:12px;color:#6b6b6b;margin-top:9px}.coach-bubble .coach-consent{font-size:10px;line-height:1.6;margin:8px 0 12px}.coach-action{display:inline-block;padding:9px 17px;border-radius:999px;background:#0a0a0a;color:white;font-size:12px;line-height:1.5}.coach-cat{width:144px;height:120px;background:none no-repeat -120px 0 / 1737.6px 579.2px;image-rendering:pixelated;animation:cat-float 3.8s ease-in-out infinite;filter:drop-shadow(0 12px 12px #0003);margin:36px 0 0 95px}.coach-shadow{width:110px;height:10px;background:#47537435;border-radius:50%;filter:blur(6px);margin:4px 0 0 90px}.coach-small-avatar{display:block;width:36px;height:30px;flex-shrink:0;background:none no-repeat -30px 0 / 434.4px 144.8px;image-rendering:pixelated}.coach-panel{background:#fff;color:#0a0a0a;border:1px solid #e8e8e8;border-radius:12px;overflow:hidden;box-shadow:0 18px 70px #0003;font-size:12px;line-height:1.65}.coach-panel>header{display:flex;align-items:center;gap:10px;padding:17px 19px;border-bottom:1px solid #e8e8e8}.coach-panel>header strong{font-size:14px}.coach-panel>header p{font-size:10px;color:#6b6b6b;margin-top:3px}.coach-panel>header>span:last-child{margin-left:auto;color:#7b808b;font-size:20px}.coach-body{padding:22px 20px}.coach-panel h4{font-size:14px;font-weight:650}.coach-context{padding:13px;border:1px solid #e8e8e8;border-radius:8px;font-size:12px}.coach-context>p{font-size:11px;color:#777;margin-top:6px}.coach-context dl{margin-top:15px;display:grid;gap:7px}.coach-context dt{font-size:10px;color:#787c85}.coach-context dd{font-size:12px;line-height:1.8}.coach-prompt{padding:18px 0 0;margin-top:20px;border-top:1px solid #eee}.coach-prompt p{color:#6b6b6b;font-size:11px;margin-top:9px;line-height:1.9}.coach-prompt small{display:block;font-size:10px;color:#88919c;margin-top:14px}.coach-quote{border-left:2px solid #d8dfec;padding-left:13px;margin:16px 0 4px;line-height:1.9;color:#3f4757;font-size:12px}.coach-composer-heading{display:flex;justify-content:space-between;align-items:center;margin:21px 0 13px}.coach-composer-heading span{font-size:10px;color:#848484}.coach-field{margin-bottom:15px}.coach-field strong{display:block;font-weight:550;font-size:12px;margin-bottom:7px}.coach-field p{border:1px solid #dfe2e8;border-radius:7px;min-height:60px;padding:11px;color:#969ca8;font-size:11px;line-height:1.65}.coach-footer{border-top:1px solid #e8e8e8;padding:16px 20px}.coach-footer p{font-size:9px;color:#8a8a8a;margin-bottom:12px}.coach-footer .coach-action+span{font-size:11px;color:#707070;margin-left:15px}.bot-example-note{color:#687386;font-size:10px;margin-top:26px;text-align:right}.coach-example{font-size:9px;color:#71809b;background:#eef2f7;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:13px}
+@keyframes cat-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1024px){.step-layout,.step-layout.reverse{grid-template-columns:minmax(0,1.55fr) minmax(260px,1fr);gap:30px}.guide-step{padding:55px 0}.step-heading{margin-bottom:24px}.step-heading h2{font-size:30px}.step-instructions ol{gap:17px}.bot-flow{grid-template-columns:.85fr 1fr 1.1fr;gap:14px}.coach-body{padding:17px 14px}.coach-panel>header{padding:14px 12px;gap:6px}.coach-small-avatar{display:none}.coach-bubble{padding:17px 15px}.coach-cat{margin-left:45px}.bot-heading{gap:25px}}
+@media(max-width:760px){.bot-flow{grid-template-columns:1fr;max-width:430px;margin:auto;gap:36px}.coach-small-avatar{display:block}.bot-heading{display:block}.bot-heading p:last-child{margin-top:16px;max-width:none}.coach-welcome{padding-top:15px}.coach-cat{margin-left:95px}.coach-panel>header{padding:17px 19px}.coach-body{padding:22px 20px}.bot-example-note{text-align:center}.bot-showcase{margin-top:65px;padding-top:35px}}
+@media(max-width:760px){.step-layout,.step-layout.reverse{display:flex;flex-direction:column;align-items:stretch;gap:22px}.step-copy{display:contents}.step-heading{order:0;margin:0}.screen-stage{order:1}.step-instructions{order:2}.step-heading h2{font-size:29px}.step-heading .step-description{font-size:13px;margin-top:12px}.screen-surround{padding:8px;border-radius:11px}.guide-step{padding:44px 0}.step-instructions ol{gap:12px}.step-instructions li{font-size:12px}.step-actions{margin-top:15px}.screen-pin{width:19px;height:19px;font-size:9px}.guide-intro{padding:100px 0 36px}.guide-intro h1{font-size:36px}.hover-caption{font-size:10px;padding:0 24px;line-height:1.6}.hover-caption span{display:none}.bot-heading h3{margin-top:0}}
+
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+.launch-link{display:inline-flex;align-items:center;justify-content:center;min-width:184px;min-height:60px;padding:18px 28px;border:0;border-radius:16px;background:#2271eb;color:#fff;font-size:17px;font-weight:600;line-height:24px;letter-spacing:-.015em;white-space:nowrap;transition:background .2s,scale .2s}
+.launch-link:hover{background:#1b64da}
+.launch-link:active{background:#1859c5;scale:.98}
+.launch-link:focus-visible{outline:3px solid #90c2ff;outline-offset:5px}
+.ai-launch{opacity:0;visibility:hidden;position:absolute;z-index:4;left:calc(50% + 145px);top:50%;transform:translateY(-50%)}
+.guide-cta .launch-link{flex-shrink:0}
+.hero-copy{max-width:570px}
+.hero-copy h1{font-size:clamp(34px,4vw,60px);font-weight:700;line-height:1.35;letter-spacing:-.025em}
+.hero-copy h1 em{font:inherit;color:#80b4ff;letter-spacing:inherit}
+.hero-copy .hero-action{margin-top:32px}
+.guide-intro h1,.step-heading h2,.guide-cta h2,.bot-heading h3{font-weight:650;letter-spacing:-.025em}
+.team-section h2{font-family:"Pretendard",sans-serif;font-weight:650;letter-spacing:-.03em}
+.team-section h2 em{font:inherit;color:#80b4ff}
+.top-link{min-height:40px;padding:0 14px;border-radius:12px;background:#20242c;font-size:13px;font-weight:600;color:#c9d9ee;gap:10px;transition:background .2s}
+.top-link:hover{background:#2d3440}
+.top-link span{display:none}
+.brand{font-weight:750;letter-spacing:-.025em}
+.round-button{width:44px;height:44px;border:0;background:#23262c;color:#d8dce5}
+.round-button:hover{background:#333842}
+.text-link{font-weight:500}
+@media(max-width:760px){
+ .launch-link{min-width:170px;min-height:56px;padding:16px 24px;border-radius:14px;font-size:16px}
+ .ai-launch{left:50%;top:calc(50% + 140px);transform:translate(-50%,-50%)}
+ .guide-cta .launch-link{margin-top:24px}
+ .hero-copy h1{font-size:clamp(30px,8.5vw,40px);line-height:1.4}
+ .hero-copy .hero-action{margin-top:26px}
+ .top-link{font-size:12px;min-height:36px;padding:0 12px}
+}
+
+.news-selected{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:9;visibility:hidden;opacity:0;display:grid;gap:14px;justify-items:center;width:calc(100% - 40px);pointer-events:none}
+.news-published{font-size:15px;font-weight:500;color:#d1d8e0;line-height:1.5}
+.news-actions{display:flex;gap:8px;pointer-events:auto}
+.news-actions button{min-height:44px;padding:12px 20px;border-radius:12px;font-size:14px;font-weight:600;background:#282c34;color:#f2f4f6}
+.news-actions .news-detail-toggle{background:#2271eb}
+.news-actions .news-detail-toggle:hover{background:#1b64da}
+.news-actions .news-dismiss:hover{background:#383f4a}
+.overview{bottom:96px;width:min(680px,calc(100% - 48px))}
+.overview h2{font-size:20px;line-height:1.45;font-weight:600}
+.overview .meta{font:500 14px/1.6 "Pretendard",sans-serif;color:#c4ccd7;margin-top:10px}
+.overview .news-description{font-size:14px;line-height:1.7;margin-top:14px;color:#b0b8c1}
+.overview .tags a{display:inline-flex;align-items:center;min-height:44px;font-size:14px;padding:10px 14px;border-radius:10px;color:#b5d2ff}
+@media(max-width:640px){
+ .overview{bottom:90px;width:calc(100% - 36px)}
+ .overview h2{font-size:17px}
+ .overview .meta{font-size:12px}
+ .overview .news-description{font-size:13px;line-height:1.6}
+ .news-published{font-size:13px}
+ .news-selected{bottom:24px}
+}
+.ai-controls{bottom:28px}
+
+#guide{padding-top:96px}
+.guide-progress{gap:40px;padding:18px 24px}
+.guide-progress a{font-size:14px;font-weight:600;color:#9ba6b5}
+.guide-progress a.active{color:#8fbaff}
+.feature-section{max-width:1160px;padding:72px 0 64px;scroll-margin-top:62px}
+.feature-heading{margin-bottom:30px}
+.feature-label{font-size:15px;font-weight:650;color:#8fbaff;margin-bottom:14px}
+.feature-heading h2{font-size:clamp(30px,3.6vw,48px);line-height:1.3;font-weight:700;letter-spacing:-.025em;white-space:pre-line;word-break:keep-all}
+.feature-description{margin-top:16px;font-size:18px;line-height:1.7;color:#b0bac8;word-break:keep-all}
+.feature-visual{position:relative;display:grid;justify-items:center;gap:34px;margin:0}
+.feature-caption{font-size:20px;font-weight:650;color:#8fbaff;text-align:center;line-height:1.5;position:relative;z-index:1}
+.feature-screen{display:block;width:100%;max-width:min(100%,calc(620px * var(--capture-ratio)));border:1px solid #343b48;border-radius:20px;padding:12px;background:#171c24;text-align:left;cursor:zoom-in}
+.feature-capture{display:block;position:relative;width:100%;overflow:hidden;border-radius:10px;background:#fff}
+.feature-capture img{position:absolute;top:0;left:0;width:100%;height:auto;display:block}
+.feature-focus{position:absolute;border:2px solid #4986eb;border-radius:7px;pointer-events:none}
+.feature-leader{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.feature-leader path{fill:none;stroke:#7ea9ef;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+.feature-leader circle{fill:#7ea9ef}
+.feature-footer{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:24px}
+.feature-footer ul{display:flex;flex-wrap:wrap;gap:12px 28px;list-style:none;font-size:15px;color:#c0c9d6}
+.feature-footer li{display:flex;align-items:center;gap:10px}
+.feature-footer li:before{content:"";width:4px;height:4px;border-radius:50%;background:#8fbaff}
+.feature-footer>p{font-size:12px;color:#99a5b6}
+#reflection{max-width:1160px;margin:auto}
+#reflection .bot-showcase{margin-top:0;border-top:0;padding:72px 0}
+#reflection .bot-heading{margin-bottom:38px}
+#reflection .bot-heading h3{font-size:clamp(28px,3vw,40px);font-weight:650;line-height:1.3}
+@media(max-width:760px){
+ #guide{padding-top:86px}
+ .guide-progress{gap:0;justify-content:space-between;padding:16px 20px}
+ .guide-progress a{font-size:13px}
+ .feature-section{padding:48px 0;scroll-margin-top:54px}
+ .feature-heading{margin-bottom:25px}
+ .feature-label{font-size:13px;margin-bottom:10px}
+ .feature-heading h2{font-size:30px}
+ .feature-description{font-size:15px;margin-top:14px}
+ .feature-caption{font-size:16px}
+ .feature-screen{border-radius:14px;padding:7px}
+ .feature-capture{border-radius:7px}
+ .feature-visual{gap:28px}
+ .feature-footer{display:block;margin-top:18px}
+ .feature-footer ul{font-size:13px;gap:8px 18px}
+ .feature-footer>p{margin-top:12px;font-size:11px}
+ #reflection .bot-showcase{padding:48px 0}
+ #reflection .bot-heading{margin-bottom:24px}
+}
+
+
+.launch-link{min-width:0;min-height:54px;padding:0 23px;gap:24px;border:1px solid #ffffffc4;border-radius:16px;background:linear-gradient(180deg,#f5f8fc,#dfe6ef);color:#192230;font-size:16px;font-weight:650;line-height:1.2;box-shadow:inset 0 1px 0 #fff,0 3px 0 #9da9bb45;transition:background .2s,box-shadow .2s,scale .2s}
+.launch-link:hover{background:#fff;box-shadow:inset 0 1px 0 #fff,0 4px 20px #769bd51f}
+.launch-link:active{background:#d9e3f2;scale:.97;box-shadow:inset 0 1px 4px #16264025}
+.launch-arrow{font-size:23px;line-height:1;font-weight:400;color:#285da6;transition:transform .2s}
+.launch-link:hover .launch-arrow{transform:translate(2px,-2px)}
+.hero-copy{top:13.2%;left:8.9%;right:auto;max-width:570px;text-align:left}
+.hero-copy h1{font-size:clamp(36px,4vw,60px);line-height:1.23;font-weight:650;letter-spacing:-.035em}
+.hero-copy .hero-action{margin-top:26px}
+.ai-launch{left:calc(50% + 145px);top:50%;transform:translateY(-50%)}
+.news-actions{display:none}
+.news-selected{bottom:28px}
+.overview{bottom:40px}
+.news-cover-hit{position:absolute;z-index:7;display:block;background:transparent;padding:0;border:0;border-radius:0;cursor:pointer}
+.news-cover-hit[hidden]{display:none}
+.news-cover-hit:focus-visible{outline:2px solid #8fbaff;outline-offset:6px}
+.feature-section{height:calc(100svh - 58px);min-height:560px;padding:26px 0 24px;display:flex;flex-direction:column;justify-content:center;scroll-margin-top:58px}
+.feature-heading{text-align:center;margin-bottom:22px}
+.feature-label{font-size:13px;margin-bottom:8px}
+.feature-heading h2{font-size:clamp(28px,2.7vw,38px);line-height:1.25;white-space:normal}
+.feature-description{font-size:16px;margin-top:10px;line-height:1.5}
+.feature-visual{gap:18px}
+.feature-caption{font-size:17px;line-height:24px}
+.feature-screen{width:min(900px,calc((100svh - 320px) * 1.6),100%);max-width:none;aspect-ratio:16/10;padding:10px;border-radius:16px}
+.feature-capture{height:100%;aspect-ratio:auto!important;border-radius:7px}
+.feature-capture img{inset:5%;width:90%;height:90%;object-fit:contain}
+.feature-focus{border-width:1.5px;border-radius:5px}
+.feature-footer{display:none}
+.feature-leader path{stroke-width:1.2}
+.guide-cta{text-align:center;flex-direction:column;padding:90px 0;gap:26px}
+.guide-cta .launch-link{margin-top:0}
+@media(max-width:760px){
+ .hero-copy{top:13%;left:7%;right:auto;max-width:380px}
+ .hero-copy h1{font-size:clamp(29px,8.3vw,40px)}
+ .launch-link{min-height:52px;padding:0 21px;font-size:15px;gap:20px;border-radius:14px}
+ .ai-launch{left:50%;top:calc(50% + 145px);transform:translate(-50%,-50%);padding:0 21px;gap:20px;min-height:52px;font-size:15px}
+ .ai-launch .launch-arrow{font-size:20px}
+ .feature-section{height:calc(100svh - 54px);min-height:530px;padding:24px 0;scroll-margin-top:54px}
+ .feature-heading h2{font-size:27px;line-height:1.3}
+ .feature-description{font-size:14px;max-width:340px;margin:12px auto 0}
+ .feature-caption{font-size:15px}
+ .feature-screen{padding:6px;border-radius:12px}
+ .feature-capture{border-radius:5px}
+ .overview{bottom:32px}
+}
+
+@media(min-width:1600px){.hero-copy{top:18%}}
+@media(min-width:761px) and (max-width:1024px){.hero-copy{top:13%;left:7%;max-width:380px}}
+@media(max-width:640px){.hero-copy{top:12%;left:24px;right:24px;max-width:none}}
+
+
+.feature-section{max-width:1320px;padding:20px 0;justify-content:center}
+.feature-heading{text-align:left;margin-bottom:24px}
+.feature-heading h2{font-size:clamp(28px,2.7vw,38px)}
+.feature-visual{width:calc(100vw - 76px);max-width:none;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:32px;align-items:center;align-self:center}
+.feature-screen{grid-column:2;grid-row:1;width:min(1040px,calc((100svh - 240px) * 1.6),calc(100vw - 400px));max-width:100%;padding:10px}
+.feature-caption{grid-column:3;grid-row:1;max-width:180px;font-size:18px;line-height:1.55;word-break:keep-all;text-align:left;text-wrap:balance}
+.feature-capture img{inset:2%;width:96%;height:96%}
+#step-analysis .feature-capture img{inset:5%;width:90%;height:90%}
+@media(min-width:641px) and (max-width:900px){
+ .feature-visual{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:24px}
+ .feature-screen{width:min(calc((100svh - 240px) * 1.6),calc(100vw - 320px))}
+ .feature-caption{font-size:16px}
+}
+@media(max-width:640px){
+ .feature-section{padding:24px 0}
+ .feature-heading{text-align:left;margin-bottom:26px}
+ .feature-description{margin-left:0;margin-right:0}
+ .feature-visual{width:100%;grid-template-columns:1fr;gap:24px;align-items:start}
+ .feature-screen{grid-column:1;grid-row:1;width:100%;padding:6px}
+ .feature-caption{grid-column:1;grid-row:2;justify-self:end;text-align:right;font-size:15px;max-width:230px}
+}
+
+
+@media(min-width:641px){#news .hero-copy{top:50%;transform:translateY(-50%)}}
+
+#reflection .bot-scene-label{display:flex;align-items:baseline;gap:12px;font-size:clamp(18px,1.6vw,22px);font-weight:600;line-height:1.5;letter-spacing:-.02em;color:#c3d0ee}
+#reflection .bot-scene-label span{flex-shrink:0;font:inherit;margin-right:0}
+@media(min-width:761px) and (max-width:1024px){#reflection .bot-scene-label{min-height:54px}}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style id="intro-without-counter">
+#news .load-count{display:none!important}
+</style>
+<style id="guide-header-original-style">
+#guide .view-head .top-link{min-height:0;padding:0;border-radius:0;background:transparent;font-size:11px;font-weight:400;color:#b9b9b6;gap:19px}
+#guide .view-head .top-link:hover{background:transparent;color:white}
+#guide .view-head .top-link span{display:inline}
+@media(max-width:640px){#guide .view-head .top-link{font-size:10px;gap:9px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#guide">사용법으로 바로가기</a>
+<main>
+<section class="view" id="news" aria-label="소식이 모여 DAYNOMY가 되기까지">
+ <div class="canvas-wrap" id="news-canvas" role="img" aria-label="DAYNOMY 기사 20개로 이루어진 구체. 드래그해 회전하고 카드를 눌러 확대할 수 있어요."></div>
+ <header class="view-head"><a class="brand" href="#news">DAYNOMY<b>·</b></a><a class="top-link" href="https://daynomy.com/" target="_blank" rel="noopener">서비스 시작하기 <span>↗</span></a></header>
+ <div class="hero-copy"><h1>세상의 소식을,<br>내 투자의 <em>맥락</em>으로.</h1><a class="launch-link hero-action" href="https://daynomy.com/" target="_blank" rel="noopener"><span>서비스 시작하기</span><span class="launch-arrow" aria-hidden="true">↗</span></a></div>
+ <div class="intro-word">DAYNOMY</div><div class="load-count" aria-hidden="true">001</div>
+ <div class="hover-caption" aria-live="polite"></div>
+ <article class="overview" id="news-details" aria-label="뉴스 상세" inert><header><div><h2></h2><p class="meta"></p></div></header><p class="news-description">보유 종목과 관련된 소식을 모아 보고, AI 분석에서 내 포트폴리오에 미치는 영향을 확인하세요.</p><div class="tags"></div></article>
+ <button class="news-cover-hit" type="button" aria-label="뉴스 상세 열기" aria-expanded="false" aria-controls="news-details" hidden></button>
+ <div class="news-selected" inert>
+  <p class="news-published"></p>
+
+ </div>
+</section>
+<section class="view" id="ai" aria-label="포트폴리오 기반 AI 분석"><div class="ai-stage">
+ <div class="canvas-wrap" id="ai-canvas" aria-hidden="true"></div>
+ <div class="sr"><h2>흩어진 시장의 소식이 내 포트폴리오를 만나, 나의 투자 맥락이 됩니다.</h2><p>뉴스와 공시, 영상, 소셜 소식을 보유 종목과 연결합니다. 보유 비중을 반영한 예상 영향과 분석 출처를 확인할 수 있습니다.</p></div>
+ <header class="view-head"><a class="brand" href="#news">DAYNOMY<b>·</b></a><a class="top-link" href="https://daynomy.com/" target="_blank" rel="noopener">서비스 시작하기 <span>↗</span></a></header>
+ <a class="launch-link ai-launch" href="https://daynomy.com/" target="_blank" rel="noopener"><span>서비스 시작하기</span><span class="launch-arrow" aria-hidden="true">↗</span></a>
+ <div class="ai-controls"><button class="round-button" data-ai-move="-1" aria-label="이전 분석 과정">↑</button><button class="round-button" data-ai-move="1" aria-label="다음 분석 과정">↓</button></div>
+</div></section>
+<section class="view" id="guide" aria-label="DAYNOMY 사용법과 팀 소개">
+ <div class="guide-scroll"><div class="guide-inner">
+ <header class="view-head"><a class="brand" href="#news">DAYNOMY<b>·</b></a><a class="top-link" href="https://daynomy.com/" target="_blank" rel="noopener">서비스 시작하기 <span>↗</span></a></header>
+ <nav class="guide-progress" aria-label="사용법 바로가기"></nav><div id="guide-steps"></div>
+ <div class="guide-cta"><h2>내 포트폴리오로 시작해 보세요.</h2><a class="launch-link " href="https://daynomy.com/" target="_blank" rel="noopener"><span>서비스 시작하기</span><span class="launch-arrow" aria-hidden="true">↗</span></a></div>
+ <section class="team-section" id="team"><h2>Meet the <em>team.</em></h2><div class="members-grid"></div></section>
+ </div></div><div class="glass-edge top"></div><div class="glass-edge bottom"></div>
+</section>
+</main>
+
+<dialog id="lightbox" aria-label="서비스 화면 미리보기"><div class="dialog-top"><div><h2></h2><p></p></div><button class="close-small" data-close>닫기 ×</button></div><img class="lightbox-media" alt=""><p class="dialog-description"></p><ol class="dialog-steps"></ol><div class="dialog-action"><button class="pill outline" id="lightbox-jump">사용법 자세히 보기 ↓</button></div></dialog>
+<noscript><style>.view{display:none}</style><p style="padding:50px">DAYNOMY · 내 포트폴리오를 기준으로 시장을 읽습니다. 이 인터랙티브 소개를 보려면 JavaScript를 켜주세요. <a href="https://daynomy.com/">서비스 열기 ↗</a></p></noscript>
+<template id="bot-showcase">
+<div class="bot-showcase">
+ <header class="bot-heading"><div><h3>투자 기록을 돌아보는 시간</h3></div></header>
+ <div class="bot-flow">
+  <div class="bot-scene"><p class="bot-scene-label"><span>01</span> 고양이가 건네는 알림</p><div class="coach-welcome"><div class="coach-bubble"><strong>복기할 기록이 1개 있어요</strong><p>삼성전자의 결과를 남겨볼까요?</p><p class="coach-consent">열면 보유 이유와 관련 기사 일부를 외부 AI에 보내 근거를 준비해요.</p><span class="coach-action">바로 작성하기</span></div><div class="coach-cat" role="img" aria-label="실제 DAYNOMY 투자리그 고양이 봇"></div><div class="coach-shadow" aria-hidden="true"></div></div></div>
+  <div class="bot-scene"><p class="bot-scene-label"><span>02</span> 그때의 판단을 다시 보고</p><article class="coach-panel"><header><span class="coach-small-avatar" aria-hidden="true"></span><div><strong>삼성전자 복기</strong><p>2026-10-20 · 매수</p></div><span aria-hidden="true">−</span></header><div class="coach-body"><span class="coach-example">예시 기록</span><div class="coach-context"><h4>당시의 판단</h4><dl><dt>보유 이유</dt><dd>실적 개선 흐름을 지켜보려고 해요.</dd></dl></div><div class="coach-prompt"><h4>나의 판단을 돌아보는 시간</h4><blockquote class="coach-quote">기대했던 변화가<br>실제 결과로 이어졌나요?</blockquote><p>보유 이유와 관련 기사를 함께 살펴보며,<br>결과와 다음 행동을 차근차근 정리해요.</p></div></div></article></div>
+  <div class="bot-scene"><p class="bot-scene-label"><span>03</span> 질문을 따라 복기 작성</p><article class="coach-panel"><header><span class="coach-small-avatar" aria-hidden="true"></span><div><strong>삼성전자 복기</strong><p>2026-10-20 · 매수</p></div><span aria-hidden="true">−</span></header><div class="coach-body"><div class="coach-context"><strong>당시의 판단</strong><p>실적 개선 흐름을 지켜보려고 해요.　⌄</p></div><div class="coach-composer-heading"><h4>나의 복기</h4><span>0/3 작성</span></div><div class="coach-field"><strong>실제 결과</strong><p>예: 매출은 늘었지만 주가는 기대보다 적게 올랐어요.</p></div><div class="coach-field"><strong>예상과 달랐던 점</strong><p>예: 비용 증가의 영향이 컸어요.</p></div><div class="coach-field"><strong>다음 행동</strong><p>예: 다음 실적에서 비용이 줄어드는지 확인해요.</p></div></div><footer class="coach-footer"><p>공개 설정에 따라 다른 투자자에게도 보일 수 있어요.</p><span class="coach-action">복기 저장</span><span>나중에</span></footer></article></div>
+ </div>
+</div>
+</template>
+
+<script>window.DAYNOMY_ASSETS={"screens":[{"src":"assets/f2dfbe4af0a924ab.png","alt":"AI 분석 화면. 자산별 영향, 전체 포트폴리오 분석과 분석 출처."},{"src":"assets/72ac84a51e72d144.png","alt":"포트폴리오의 평가금액, 금액 숨기기, 평가손익과 보유 종목 화면."},{"src":"assets/1a2ebd8d70b8c1d7.png","alt":"보유 종목 소식 실제 서비스 화면. 종목 선택과 전체, 데이노미, X, Threads, YouTube, 기타 채널 필터. 공식 서비스 소개용 예시 데이터."},{"src":"assets/520344c33eaddee4.png","alt":"주간 리그 순위와 다른 투자자의 프로필 보기 화면."}],"team":{"euno":"assets/dfc885eff41dec0e.png","kaya":"assets/ddce30e0ab30f745.png","juni":"assets/2bd38eb634a80e96.png","romi":"assets/2104d3a25e47068f.png"},"news":["assets/39b96e685f971a84.jpg","assets/8bb017430b9a7cd4.jpg","assets/61b974bdb3112312.jpg","assets/b71b1d2f9ee5549f.jpg","assets/825d468ab2eaccd7.jpg","assets/be879812de0473e5.jpg","assets/58f27323120b2eea.jpg","assets/25fce6bf4914623b.jpg","assets/6c58f1ef4f40facb.jpg","assets/4ab78ad74aa16f8e.jpg","assets/d23f8bba28392e0a.jpg","assets/1e90c07d3654b53f.jpg","assets/abdd0a2a401eb3c7.jpg","assets/ee2eb0dfae00287d.jpg","assets/0b2e193115047008.jpg","assets/8a4990770320f4ec.jpg","assets/86dd15f26f893d54.jpg","assets/724270c1792a5e4e.jpg","assets/8587be5f2f12116f.jpg","assets/7be02f7909132922.jpg"],"catSprite":"assets/301efb64301ed49c.png"};</script>
+<script type="module">// design/daynomy-immersive/app.js
+import * as THREE from "three";
+
+function paintNewsCover(ctx, news2, photos, font) {
+  const photo = photos[news2.index];
+  ctx.fillStyle = "#1c2028";
+  ctx.fillRect(0, 0, 640, 360);
+  if (photo) {
+    const scale = Math.max(640 / photo.width, 360 / photo.height);
+    ctx.drawImage(photo, (640 - photo.width * scale) / 2, (360 - photo.height * scale) / 2, photo.width * scale, photo.height * scale);
+  }
+  const shade = ctx.createLinearGradient(0, 60, 0, 360);
+  shade.addColorStop(0, "#06090e12");
+  shade.addColorStop(0.55, "#06090e99");
+  shade.addColorStop(1, "#06090ef5");
+  ctx.fillStyle = shade;
+  ctx.fillRect(0, 0, 640, 360);
+  ctx.fillStyle = "#0c101bbf";
+  ctx.fillRect(22, 20, 90, 32);
+  ctx.fillStyle = "#e6eeff";
+  ctx.font = `500 16px ${font}`;
+  ctx.fillText(news2.category, 35, 42);
+  ctx.font = `500 27px ${font}`;
+  const lines = [];
+  let line = "";
+  for (const letter of news2.title) {
+    if (line && ctx.measureText(line + letter).width > 588) {
+      lines.push(line.trim());
+      line = letter;
+    } else line += letter;
+  }
+  if (line) lines.push(line.trim());
+  ctx.fillStyle = "#fff";
+  lines.forEach((value, i) => ctx.fillText(value, 26, 289 + (i - lines.length + 1) * 36));
+  ctx.fillStyle = "#b5bfce";
+  ctx.font = `400 15px ${font}`;
+  ctx.fillText(`${news2.source}  \xB7  ${news2.publishedAt.slice(0, 10).replaceAll("-", ".")}`, 26, 332);
+}
+
+var PortraitSheet = class {
+  constructor() {
+    this.n = 72;
+    this.m = this.n + 1;
+    this.over = 1.7;
+    this.span = this.over / this.n;
+    this.count = this.m * this.m;
+    this.rest = new Float32Array(this.count * 2);
+    this.indices = new Uint16Array(this.n * this.n * 6);
+    this.x = new Float32Array(this.count);
+    this.y = new Float32Array(this.count);
+    this.renderedX = new Float32Array(this.count);
+    this.renderedY = new Float32Array(this.count);
+    this.vx = new Float32Array(this.count);
+    this.vy = new Float32Array(this.count);
+    this.forward = new Float32Array(this.m);
+    this.backward = new Float32Array(this.m);
+    this.accumulator = 0;
+    this.brush = null;
+    for (let j = 0; j < this.m; j++) for (let i = 0; i < this.m; i++) {
+      const k = j * this.m + i;
+      this.rest[k * 2] = 0.5 - this.over / 2 + i * this.span;
+      this.rest[k * 2 + 1] = 0.5 - this.over / 2 + j * this.span;
+    }
+    for (let j = 0, k = 0; j < this.n; j++) for (let i = 0; i < this.n; i++) {
+      const a = j * this.m + i, b = a + 1, c = a + this.m, d = c + 1;
+      this.indices.set([a, c, b, b, c, d], k);
+      k += 6;
+    }
+  }
+  grab(u, v) {
+    const nodes = [];
+    for (let k = 0; k < this.count; k++) {
+      const dx = this.rest[k * 2] + this.x[k] - u;
+      const dy = this.rest[k * 2 + 1] + this.y[k] - v;
+      const w = Math.exp(-(dx * dx + dy * dy) / (0.22 * 0.22));
+      if (w > 0.02) nodes.push([k, w, this.x[k], this.y[k]]);
+    }
+    this.brush = { u, v, px: 0, py: 0, nodes };
+  }
+  pull(u, v) {
+    if (!this.brush) return;
+    const dx = u - this.brush.u, dy = v - this.brush.v;
+    const distance = Math.hypot(dx, dy);
+    const scale = distance ? 0.24 * (1 - Math.exp(-distance / 0.24)) / distance : 0;
+    this.brush.px = dx * scale;
+    this.brush.py = dy * scale;
+  }
+  release() {
+    this.brush = null;
+  }
+  poke(u, v, dx, dy) {
+    for (let k = 0; k < this.count; k++) {
+      const ax = this.rest[k * 2] - u, ay = this.rest[k * 2 + 1] - v;
+      const w = Math.exp(-(ax * ax + ay * ay) / (0.09 * 0.09));
+      this.vx[k] += dx * w;
+      this.vy[k] += dy * w;
+    }
+  }
+  advance(seconds) {
+    this.accumulator += Math.min(Math.max(seconds, 0), 0.05);
+    while (this.accumulator + 1e-10 >= 1 / 240) {
+      this.step(1 / 240);
+      this.accumulator -= 1 / 240;
+    }
+    this.project();
+  }
+  step(dt) {
+    const wobble = 2.3 * 2 * Math.PI;
+    const c = 0.085 / this.span * wobble;
+    const damping = 2 * 0.14 * wobble;
+    for (let j = 1; j < this.n; j++) for (let i = 1; i < this.n; i++) {
+      const k = j * this.m + i, l = k - 1, r = k + 1, t = k - this.m, b = k + this.m;
+      this.vx[k] += (c * c * (this.x[l] + this.x[r] + this.x[t] + this.x[b] - 4 * this.x[k]) - wobble * wobble * this.x[k] - damping * this.vx[k] + 0.2 * c * (this.vx[l] + this.vx[r] + this.vx[t] + this.vx[b] - 4 * this.vx[k])) * dt;
+      this.vy[k] += (c * c * (this.y[l] + this.y[r] + this.y[t] + this.y[b] - 4 * this.y[k]) - wobble * wobble * this.y[k] - damping * this.vy[k] + 0.2 * c * (this.vy[l] + this.vy[r] + this.vy[t] + this.vy[b] - 4 * this.vy[k])) * dt;
+    }
+    if (this.brush) for (const [k, w, x0, y0] of this.brush.nodes) {
+      const tx = x0 + this.brush.px * w, ty = y0 + this.brush.py * w;
+      const limit = Math.min(1, 0.24 / (Math.hypot(tx, ty) || 1));
+      this.vx[k] += ((tx * limit - this.x[k]) * 3e3 * w - this.vx[k] * 90 * w) * dt;
+      this.vy[k] += ((ty * limit - this.y[k]) * 3e3 * w - this.vy[k] * 90 * w) * dt;
+    }
+    for (let k = 0; k < this.count; k++) {
+      this.x[k] += this.vx[k] * dt;
+      this.y[k] += this.vy[k] * dt;
+    }
+  }
+  order(start, stride, field, axis) {
+    const gap = this.span * 0.34;
+    for (let i = 0; i < this.m; i++) {
+      const k = start + i * stride, p = this.rest[k * 2 + axis] + field[k];
+      this.forward[i] = i ? Math.max(p, this.forward[i - 1] + gap) : p;
+    }
+    for (let i = this.n; i >= 0; i--) {
+      const k = start + i * stride, p = this.rest[k * 2 + axis] + field[k];
+      this.backward[i] = i < this.n ? Math.min(p, this.backward[i + 1] - gap) : p;
+    }
+    for (let i = 0; i < this.m; i++) {
+      const k = start + i * stride;
+      field[k] = (this.forward[i] + this.backward[i]) / 2 - this.rest[k * 2 + axis];
+    }
+  }
+  project() {
+    for (let j = 0; j < this.m; j++) for (let i = 0; i < this.m; i++) {
+      const k = j * this.m + i, edge = !i || !j || i === this.n || j === this.n;
+      this.renderedX[k] = edge ? this.x[k] : (4 * this.x[k] + this.x[k - 1] + this.x[k + 1] + this.x[k - this.m] + this.x[k + this.m]) / 8;
+      this.renderedY[k] = edge ? this.y[k] : (4 * this.y[k] + this.y[k - 1] + this.y[k + 1] + this.y[k - this.m] + this.y[k + this.m]) / 8;
+    }
+    for (let pass = 0; pass < 2; pass++) {
+      for (let j = 0; j < this.m; j++) this.order(j * this.m, 1, this.renderedX, 0);
+      for (let i = 0; i < this.m; i++) this.order(i, this.m, this.renderedY, 1);
+    }
+    for (let attempt = 0; attempt < 10; attempt++) {
+      if (this.minimumArea() > this.span * this.span * 0.08) return;
+      for (let k = 0; k < this.count; k++) {
+        this.renderedX[k] *= 0.5;
+        this.renderedY[k] *= 0.5;
+      }
+    }
+    this.renderedX.fill(0);
+    this.renderedY.fill(0);
+  }
+  minimumArea() {
+    let min = Infinity;
+    for (let k = 0; k < this.indices.length; k += 3) {
+      const a = this.indices[k], b = this.indices[k + 1], c = this.indices[k + 2];
+      const ax = this.rest[a * 2] + this.renderedX[a], ay = this.rest[a * 2 + 1] + this.renderedY[a];
+      const bx = this.rest[b * 2] + this.renderedX[b], by = this.rest[b * 2 + 1] + this.renderedY[b];
+      const cx = this.rest[c * 2] + this.renderedX[c], cy = this.rest[c * 2 + 1] + this.renderedY[c];
+      min = Math.min(min, (cx - ax) * (by - ay) - (cy - ay) * (bx - ax));
+    }
+    return min;
+  }
+};
+
+function mountSoftPortrait(button, canvas2, fallback2) {
+  const gl = canvas2.getContext("webgl", { alpha: true, premultipliedAlpha: true, antialias: true });
+  if (!gl) return () => {
+  };
+  const abort = new AbortController();
+  const { signal } = abort;
+  const sheet = new PortraitSheet();
+  const shaders = [], buffers = [];
+  const program = gl.createProgram();
+  const texture2 = gl.createTexture();
+  let frameId = 0, disposed = false, loaded = false, visible = true;
+  let pointer2 = null, alpha = null;
+  let previous = performance.now(), lastInput = previous, u = 0.5, v = 0.5, leanX = 0, leanY = 0;
+  let lastPointerX = 0, lastPointerY = 0;
+  let scrollUntil = 0;
+  function shader(type, code) {
+    const result = gl.createShader(type);
+    shaders.push(result);
+    gl.shaderSource(result, code);
+    gl.compileShader(result);
+    if (!gl.getShaderParameter(result, gl.COMPILE_STATUS)) throw new Error("Portrait shader could not compile");
+    gl.attachShader(program, result);
+  }
+  function buffer(type, data, usage) {
+    const result = gl.createBuffer();
+    buffers.push(result);
+    gl.bindBuffer(type, result);
+    gl.bufferData(type, data, usage);
+    return result;
+  }
+  function restore() {
+    fallback2.style.visibility = "visible";
+    canvas2.style.visibility = "hidden";
+    button.dataset.portraitState = "fallback";
+  }
+  function cleanup() {
+    disposed = true;
+    abort.abort();
+    cancelAnimationFrame(frameId);
+    resize.disconnect();
+    intersection.disconnect();
+    if (pointer2 !== null && button.hasPointerCapture(pointer2)) button.releasePointerCapture(pointer2);
+    for (const item of buffers) gl.deleteBuffer(item);
+    for (const item of shaders) gl.deleteShader(item);
+    gl.deleteTexture(texture2);
+    gl.deleteProgram(program);
+    restore();
+  }
+  const resize = new ResizeObserver(() => {
+    const box = canvas2.getBoundingClientRect(), ratio = Math.min(devicePixelRatio || 1, 2);
+    canvas2.width = Math.round(box.width * ratio);
+    canvas2.height = Math.round(box.height * ratio);
+    gl.viewport(0, 0, canvas2.width, canvas2.height);
+  });
+  const intersection = new IntersectionObserver(([entry]) => {
+    visible = entry.isIntersecting;
+    previous = performance.now();
+  });
+  try {
+    let release2 = function() {
+      sheet.release();
+      if (pointer2 !== null && button.hasPointerCapture(pointer2)) button.releasePointerCapture(pointer2);
+      pointer2 = null;
+      button.dataset.portraitState = "settling";
+      lastInput = performance.now();
+    }, frame2 = function(now) {
+      if (disposed) return;
+      frameId = requestAnimationFrame(frame2);
+      const dt = Math.min(0.05, (now - previous) / 1e3);
+      previous = now;
+      if (!loaded || !visible || document.hidden || button.closest("[inert]")) return;
+      sheet.advance(dt);
+      const follow = 1 - Math.exp(-dt * 8);
+      const active = now - lastInput < 4e3;
+      leanX += (active ? Math.max(-0.018, Math.min(0.018, (u - 0.5) * 0.012)) - leanX : -leanX) * follow;
+      leanY += ((now < scrollUntil ? 0.012 : active ? Math.max(-0.012, Math.min(0.012, (v - 0.5) * 8e-3)) : 0) - leanY) * follow;
+      let max = 0;
+      for (let k = 0; k < sheet.count; k++) {
+        const x = sheet.renderedX[k], y = sheet.renderedY[k];
+        dynamic[k * 3] = x;
+        dynamic[k * 3 + 1] = y;
+        const row = k % sheet.m, col = k / sheet.m | 0;
+        dynamic[k * 3 + 2] = row > 0 && row < sheet.n && col > 0 && col < sheet.n ? Math.max(0.86, Math.min(1.16, 1 - (sheet.renderedX[k + 1] - sheet.renderedX[k - 1] + (sheet.renderedY[k + sheet.m] - sheet.renderedY[k - sheet.m])) * 1.8)) : 1;
+        max = Math.max(max, Math.abs(x), Math.abs(y));
+      }
+      if (pointer2 === null && max < 5e-4) button.dataset.portraitState = "resting";
+      gl.useProgram(program);
+      gl.bindBuffer(gl.ARRAY_BUFFER, dynamicBuffer);
+      gl.bufferSubData(gl.ARRAY_BUFFER, 0, dynamic);
+      gl.activeTexture(gl.TEXTURE0);
+      gl.bindTexture(gl.TEXTURE_2D, texture2);
+      gl.uniform2f(lean, leanX, leanY);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.drawElements(gl.TRIANGLES, sheet.indices.length, gl.UNSIGNED_SHORT, 0);
+    };
+    var release = release2, frame = frame2;
+    shader(gl.VERTEX_SHADER, `attribute vec2 a,d; attribute float s; varying vec2 uv; varying float shade; uniform vec2 lean;
+      void main(){uv=a;shade=s;vec2 p=a+d+lean;gl_Position=vec4(vec2(p.x-.5,.5-p.y)*2./1.7,0.,1.);}`);
+    shader(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; varying float shade; uniform sampler2D face;
+      void main(){if(uv.x<0.||uv.y<0.||uv.x>1.||uv.y>1.){gl_FragColor=vec4(0.);return;}vec4 c=texture2D(face,uv);gl_FragColor=vec4(c.rgb*shade,c.a);}`);
+    gl.linkProgram(program);
+    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error("Portrait shader could not link");
+    gl.useProgram(program);
+    buffer(gl.ARRAY_BUFFER, sheet.rest, gl.STATIC_DRAW);
+    const a = gl.getAttribLocation(program, "a");
+    gl.enableVertexAttribArray(a);
+    gl.vertexAttribPointer(a, 2, gl.FLOAT, false, 0, 0);
+    const dynamic = new Float32Array(sheet.count * 3);
+    const dynamicBuffer = buffer(gl.ARRAY_BUFFER, dynamic, gl.DYNAMIC_DRAW);
+    const d = gl.getAttribLocation(program, "d"), s = gl.getAttribLocation(program, "s");
+    gl.enableVertexAttribArray(d);
+    gl.vertexAttribPointer(d, 2, gl.FLOAT, false, 12, 0);
+    gl.enableVertexAttribArray(s);
+    gl.vertexAttribPointer(s, 1, gl.FLOAT, false, 12, 8);
+    buffer(gl.ELEMENT_ARRAY_BUFFER, sheet.indices, gl.STATIC_DRAW);
+    const lean = gl.getUniformLocation(program, "lean");
+    gl.uniform1i(gl.getUniformLocation(program, "face"), 0);
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+    gl.clearColor(0, 0, 0, 0);
+    const uv = (x, y) => {
+      const rect = button.getBoundingClientRect();
+      return [(x - rect.left) / rect.width, (y - rect.top) / rect.height];
+    };
+    const solid = (x, y) => alpha && x >= 0 && y >= 0 && x < 1 && y < 1 && alpha[((y * 128 | 0) * 128 + (x * 128 | 0)) * 4 + 3] > 40;
+    window.addEventListener("pointermove", (event) => {
+      if (!loaded || !visible || button.closest("[inert]")) return;
+      [u, v] = uv(event.clientX, event.clientY);
+      const dx = Math.max(-50, Math.min(50, event.clientX - lastPointerX));
+      const dy = Math.max(-50, Math.min(50, event.clientY - lastPointerY));
+      lastPointerX = event.clientX;
+      lastPointerY = event.clientY;
+      lastInput = performance.now();
+      if (pointer2 === event.pointerId) sheet.pull(u, v);
+      else if (pointer2 === null && solid(u, v)) sheet.poke(u, v, dx * 35e-5, dy * 35e-5);
+    }, { signal, passive: true });
+    button.addEventListener("pointerdown", (event) => {
+      if (event.button !== 0 || pointer2 !== null || !loaded) return;
+      const [x, y] = uv(event.clientX, event.clientY);
+      if (!solid(x, y)) return;
+      pointer2 = event.pointerId;
+      sheet.grab(x, y);
+      lastInput = performance.now();
+      button.setPointerCapture(event.pointerId);
+      button.dataset.portraitState = "dragging";
+      event.preventDefault();
+    }, { signal });
+    button.addEventListener("pointerup", release2, { signal });
+    button.addEventListener("pointercancel", release2, { signal });
+    button.addEventListener("lostpointercapture", () => {
+      if (pointer2 !== null) release2();
+    }, { signal });
+    button.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") release2();
+      if (event.code === "Space" || event.key === "Enter") {
+        event.preventDefault();
+        sheet.poke(0.55, 0.5, 1.3, -0.6);
+        lastInput = performance.now();
+        button.dataset.portraitState = "settling";
+      }
+    }, { signal });
+    window.addEventListener("blur", () => {
+      release2();
+      u = v = 0.5;
+    }, { signal });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) release2();
+      previous = performance.now();
+    }, { signal });
+    window.addEventListener("scroll", () => {
+      scrollUntil = performance.now() + 400;
+      lastInput = performance.now();
+    }, { signal, passive: true });
+    canvas2.addEventListener("webglcontextlost", () => {
+      loaded = false;
+      cancelAnimationFrame(frameId);
+      restore();
+    }, { signal });
+    const image2 = new Image();
+    image2.onload = () => {
+      if (disposed) return;
+      try {
+        const mask = document.createElement("canvas");
+        mask.width = mask.height = 128;
+        const ctx = mask.getContext("2d", { willReadFrequently: true });
+        ctx.drawImage(image2, 0, 0, 128, 128);
+        alpha = ctx.getImageData(0, 0, 128, 128).data;
+        gl.activeTexture(gl.TEXTURE0);
+        gl.bindTexture(gl.TEXTURE_2D, texture2);
+        gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image2);
+        for (const axis of [gl.TEXTURE_WRAP_S, gl.TEXTURE_WRAP_T]) gl.texParameteri(gl.TEXTURE_2D, axis, gl.CLAMP_TO_EDGE);
+        for (const filter of [gl.TEXTURE_MIN_FILTER, gl.TEXTURE_MAG_FILTER]) gl.texParameteri(gl.TEXTURE_2D, filter, gl.LINEAR);
+        loaded = true;
+        button.dataset.portraitState = "resting";
+        canvas2.style.visibility = "visible";
+        fallback2.style.visibility = "hidden";
+        previous = performance.now();
+        frameId = requestAnimationFrame(frame2);
+      } catch {
+        restore();
+      }
+    };
+    image2.onerror = () => {
+      if (!disposed) restore();
+    };
+    image2.src = fallback2.src;
+    resize.observe(canvas2);
+    intersection.observe(button);
+  } catch {
+    cleanup();
+  }
+  return cleanup;
+}
+
+var staff_news_default = {
+  source: "https://staff.daynomy.com/api/news",
+  capturedAt: "2026-11-12",
+  items: [
+    {
+      id: 329,
+      title: "\uD55C\uAD6D 10\uC6D4 \uCDE8\uC5C5\uC790\uAC00 13\uB9CC9000\uBA85 \uC99D\uAC00\uD558\uACE0 \uCCAD\uB144 \uACE0\uC6A9\uB960\uC740 \uD558\uB77D\uD568",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-11T03:38:40.969792Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/18890c3a-9299-4acd-b61e-01763996a031.webp",
+      href: "https://daynomy.com/news/329",
+      file: "329.webp",
+      index: 0
+    },
+    {
+      id: 328,
+      title: "\uC815\uBD80 \uD569\uB3D9\uC810\uAC80\uC5D0\uC11C \uBD80\uC815\uCCAD\uC57D \uC758\uC2EC 354\uAC74\uC774 \uC801\uBC1C\uB428",
+      category: "\uBD80\uB3D9\uC0B0",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-11T03:35:41.576977Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/6692fd78-8887-45af-a6c4-9af200f50ebb.webp",
+      href: "https://daynomy.com/news/328",
+      file: "328.webp",
+      index: 1
+    },
+    {
+      id: 326,
+      title: "\uBBF8\uAD6D 10\uC6D4 CPI\uAC00 \uC804\uC6D4 \uB300\uBE44 0.4% \uC0C1\uC2B9\uD558\uBA70 \uBB3C\uAC00\xB7\uAE08\uB9AC \uACBD\uACC4\uAC00 \uD655\uB300\uB428",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-11T03:25:53.115434Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/dfd3bdf5-a80f-406a-b02a-32053042d16c.webp",
+      href: "https://daynomy.com/news/326",
+      file: "326.webp",
+      index: 2
+    },
+    {
+      id: 309,
+      title: "AI \uB370\uC774\uD130\uC13C\uD130 \uAD00\uB828\uC8FC \uB9E4\uB3C4\uB85C \uBBF8\uAD6D \uC99D\uC2DC \uAE09\uB77D",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-09T10:17:02.663423Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/e75fd464-7a9b-44fa-a1c2-6def4d1f9959.webp",
+      href: "https://daynomy.com/news/309",
+      file: "309.webp",
+      index: 3
+    },
+    {
+      id: 302,
+      title: "\uC528\uC5D0\uC2A4\uC708\uB4DC, \uBBF8\uAD6D \uBCA0\uC2A4\uD0C0\uC2A4\uC640 797\uC5B5\uC6D0 \uADDC\uBAA8 \uD48D\uB825\uD0C0\uC6CC \uACF5\uAE09\uACC4\uC57D \uCCB4\uACB0",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-06T00:52:48.521738Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/ac3af709-80a5-4f66-a868-a89ab5eef043.webp",
+      href: "https://daynomy.com/news/302",
+      file: "302.webp",
+      index: 4
+    },
+    {
+      id: 297,
+      title: "\uD578\uC988\uCF54\uD37C\uB808\uC774\uC158, \uD604\uB300\uC790\uB3D9\uCC28 \uC54C\uB8E8\uBBF8\uB284 \uD720 \uACF5\uAE09\uACC4\uC57D \uD574\uC9C0 \uACF5\uC2DC",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-06T00:43:35.392837Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/1b5aea3b-af55-4316-9cfd-9e46916e95e4.webp",
+      href: "https://daynomy.com/news/297",
+      file: "297.webp",
+      index: 5
+    },
+    {
+      id: 298,
+      title: "\uCE74\uCE74\uC624, 2026\uB144 3\uBD84\uAE30 \uC5F0\uACB0 \uC601\uC5C5\uC774\uC775 2403\uC5B5\uC6D0 \uC7A0\uC815 \uACF5\uC2DC",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-06T00:42:58.705393Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/e568d3c9-e1aa-4c6b-9030-acca0d5c887f.webp",
+      href: "https://daynomy.com/news/298",
+      file: "298.webp",
+      index: 6
+    },
+    {
+      id: 300,
+      title: "\uD55C\uAD6D\uC740\uD589, 2026\uB144 9\uC6D4 \uACBD\uC0C1\uC218\uC9C0 \uD751\uC790 614\uC5B56000\uB9CC\uB2EC\uB7EC \uBC1C\uD45C",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-06T00:41:32.884304Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/9dd849ed-6426-4e01-acd5-14ab211f71d2.jpg",
+      href: "https://daynomy.com/news/300",
+      file: "300.jpg",
+      index: 7
+    },
+    {
+      id: 301,
+      title: "\uC774\uC7AC\uBA85 \uB300\uD1B5\uB839, \uC7A5\uC7049\uAD6C\uC5ED \uACF5\uACF5\uC7AC\uAC1C\uBC1C \uD604\uC7A5 \uBC29\uBB38 \uD6C4 \uC218\uB3C4\uAD8C \uC8FC\uD0DD\uACF5\uAE09 \uC18D\uB3C4 \uC81C\uACE0 \uC8FC\uBB38",
+      category: "\uBD80\uB3D9\uC0B0",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-06T00:40:29.235086Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/0326aaaf-9379-42c7-b2a1-85e609cca449.jpg",
+      href: "https://daynomy.com/news/301",
+      file: "301.jpg",
+      index: 8
+    },
+    {
+      id: 295,
+      title: "AI \uC778\uD504\uB77C \uC18C\uD504\uD2B8\uC6E8\uC5B4 \uAE30\uC5C5 \uB798\uBE14\uC5C5, \uCF54\uC2A4\uB2E5 \uC0C1\uC7A5 \uCCAB\uB0A0 \uACF5\uBAA8\uAC00 \uB300\uBE44 25.16% \uD558\uB77D \uB9C8\uAC10",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-04T07:01:08.365338Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/990ef074-a7d4-4bc4-aabc-d5c01abd2e8b.webp",
+      href: "https://daynomy.com/news/295",
+      file: "295.webp",
+      index: 9
+    },
+    {
+      id: 293,
+      title: "\uC5D8\uC564\uC5D0\uD504, LG\uC5D0\uB108\uC9C0\uC194\uB8E8\uC158\uC5D0 1\uC870\uC6D0\uB300 LFP \uC591\uADF9\uC7AC \uC7A5\uAE30 \uACF5\uAE09\uACC4\uC57D \uCCB4\uACB0",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-04T06:54:12.737710Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/208e2503-485c-4971-803e-89fab6ded3f5.webp",
+      href: "https://daynomy.com/news/293",
+      file: "293.webp",
+      index: 10
+    },
+    {
+      id: 292,
+      title: "\uC0BC\uC131\uBC14\uC774\uC624\uB85C\uC9C1\uC2A4, \uAE00\uB85C\uBC8C \uC81C\uC57D\uC0AC\uC640 4343\uC5B5\uC6D0 \uADDC\uBAA8 CMO \uACC4\uC57D \uACF5\uC2DC",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-04T06:45:38.258928Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/b5692f0d-c15b-4667-91f2-1a2859940ce7.webp",
+      href: "https://daynomy.com/news/292",
+      file: "292.webp",
+      index: 11
+    },
+    {
+      id: 291,
+      title: "\uD558\uB098\uC790\uC0B0\uC6B4\uC6A9, \uCD9C\uBC94 3\uC8FC\uB144 \uD589\uC0AC\uC5D0\uC11C 2027\uB144 ETF \uD0A4\uC6CC\uB4DC\uB85C AI\xB7\uCC44\uAD8C\xB7\uAC00\uC0C1\uC790\uC0B0 \uC81C\uC2DC",
+      category: "ETF",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-03T06:10:19.762875Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/6b7c5542-4297-4299-90b3-328adccab02a.webp",
+      href: "https://daynomy.com/news/291",
+      file: "291.webp",
+      index: 12
+    },
+    {
+      id: 289,
+      title: "\uC0B0\uC5C5\uD1B5\uC0C1\uBD80, 2026\uB144 10\uC6D4 \uC218\uCD9C 1,152.8\uC5B5\uB2EC\uB7EC\xB7\uBB34\uC5ED\uD751\uC790 425\uC5B5\uB2EC\uB7EC \uBC1C\uD45C",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-03T06:09:26.135795Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/09280466-4738-4020-8454-5720128848fe.webp",
+      href: "https://daynomy.com/news/289",
+      file: "289.webp",
+      index: 13
+    },
+    {
+      id: 287,
+      title: "\uB514\uC564\uB514\uD30C\uB9C8\uD14D, \uBBF8\uAD6D \uC790\uD68C\uC0AC 3\uAC1C \uD30C\uC774\uD504\uB77C\uC778 \uAD8C\uB9AC \uBAA8\uD68C\uC0AC \uC774\uC804 \uACC4\uC57D \uACF5\uC2DC",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-02T09:21:02.421276Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/4d00b43c-f843-4291-a0cb-dd829a1f3a41.webp",
+      href: "https://daynomy.com/news/287",
+      file: "287.webp",
+      index: 14
+    },
+    {
+      id: 286,
+      title: "\uD3EC\uC2A4\uCF54\uC778\uD130\uB0B4\uC154\uB110, 2026\uB144 3\uBD84\uAE30 \uC601\uC5C5\uC774\uC775 4,007\uC5B5\uC6D0 \uC7A0\uC815 \uACF5\uC2DC",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-02T09:15:34.563038Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/053a51e7-e399-44c2-b8ec-3c2b9b594795.webp",
+      href: "https://daynomy.com/news/286",
+      file: "286.webp",
+      index: 15
+    },
+    {
+      id: 285,
+      title: "\uD55C\uAD6D\uAC70\uB798\uC18C, \uCF54\uC2A4\uD53C\xB7\uCF54\uC2A4\uB2E5 \uC800PBR \uAE30\uC5C5 151\uACF3 \uCCAB \uACF5\uD45C",
+      category: "\uC8FC\uC2DD",
+      source: "DAYNOMY",
+      publishedAt: "2026-11-02T09:12:17.585143Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/64e43f19-247e-450d-80b0-d1423dec65a4.webp",
+      href: "https://daynomy.com/news/285",
+      file: "285.webp",
+      index: 16
+    },
+    {
+      id: 227,
+      title: "KODEX \uBBF8\uAD6D\uBC30\uB2F9\uB2E4\uC6B0\uC874\uC2A4\uC561\uD2F0\uBE0C ETF\uAC00 2026-10-20 \uC2E0\uADDC \uC0C1\uC7A5",
+      category: "ETF",
+      source: "DAYNOMY",
+      publishedAt: "2026-10-21T01:31:58.836969Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/374770c2-fe26-4919-af8a-7dd41f0ad449.webp",
+      href: "https://daynomy.com/news/227",
+      file: "227.webp",
+      index: 17
+    },
+    {
+      id: 204,
+      title: "\uC0BC\uC131\uC790\uC0B0\uC6B4\uC6A9, \u2018KODEX \uBBF8\uAD6DAI\uC5D0\uC774\uC804\uD2B8\uC561\uD2F0\uBE0C\u2019 ETF \uC2E0\uADDC \uC0C1\uC7A5",
+      category: "ETF",
+      source: "DAYNOMY",
+      publishedAt: "2026-10-15T08:43:50.865014Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/28c4f3c2-aa31-4711-87e8-6c7186312cb6.webp",
+      href: "https://daynomy.com/news/204",
+      file: "204.webp",
+      index: 18
+    },
+    {
+      id: 237,
+      title: "\uD55C\uAD6D\uBD80\uB3D9\uC0B0\uC6D0 10\uC6D4 \uC14B\uC9F8 \uC8FC \uC11C\uC6B8 \uC544\uD30C\uD2B8 \uB9E4\uB9E4\uAC00\uACA9 0.13% \uC0C1\uC2B9",
+      category: "\uBD80\uB3D9\uC0B0",
+      source: "DAYNOMY",
+      publishedAt: "2026-10-26T09:07:32.136484Z",
+      imageUrl: "https://techcourse-project-2026.s3.ap-northeast-2.amazonaws.com/daynomy/87c04bb3-dfc8-439d-a5fe-c28cb39442b6.webp",
+      href: "https://daynomy.com/news/237",
+      file: "237.webp",
+      index: 19
+    }
+  ]
+};
+
+var clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+var scrollTrack = (sectionTop, travel) => clamp(-sectionTop, 0, travel);
+function unobscuredCards(cards, gap = 8) {
+  const depthLimit = -Math.max(...cards.map((c) => Math.abs(c.depth))) * 0.35;
+  const visible = [];
+  for (const card of [...cards].sort((a, b) => b.depth - a.depth)) {
+    if (card.depth < depthLimit) continue;
+    if (visible.some((other) => Math.abs(card.x - other.x) < (card.width + other.width) / 2 + gap && Math.abs(card.y - other.y) < (card.height + other.height) / 2 + gap)) continue;
+    visible.push(card);
+  }
+  return visible.map((c) => c.id);
+}
+function spherePoint(i, count) {
+  const y = i * 2 / count - 1 + 1 / count, r = Math.sqrt(1 - y * y), a = Math.PI * (3 - Math.sqrt(5)) * i;
+  return [Math.cos(a) * r, y, Math.sin(a) * r];
+}
+function keepOut(line, bot, rx, ry, padding, innerShift = 0) {
+  const d = Math.max(0, Math.abs(line.x - bot.x) - line.width / 2);
+  const h = d < rx ? ry * Math.sqrt(1 - (d / rx) ** 2) + padding : 0;
+  const edge = line.side > 0 ? line.y - line.height / 2 - bot.y : bot.y - line.y - line.height / 2;
+  return Math.max(0, h - edge, innerShift);
+}
+var followShift = (current, need, inner, order) => Math.max(inner, current + (need - current) * Math.max(0.1, 0.14 - 0.012 * order));
+var news = staff_news_default.items;
+var steps = [
+  {
+    "id": "analysis",
+    "index": "01",
+    "label": "AI 분석",
+    "title": "쏟아지는 뉴스,\n내 주식엔 어떤 의미일까요.",
+    "description": "내 투자에 미치는 영향을 분석 문장으로 확인해요.",
+    "image": 0,
+    "ratio": "1732 / 1394",
+    "caption": "내 투자에 미치는 영향",
+    "focus": [
+      40.5,
+      33.5,
+      57,
+      40
+    ],
+    "instructions": [
+      "전체 또는 개별 종목을 선택하세요.",
+      "보유 비중을 반영한 예상 영향을 읽어보세요.",
+      "분석 출처에서 근거를 확인하세요."
+    ],
+    "note": "",
+    "path": "DAYNOMY / 포트폴리오 / AI 분석"
+  },
+  {
+    "id": "portfolio",
+    "index": "02",
+    "label": "포트폴리오",
+    "title": "내 포트폴리오, 본인만 접근.",
+    "description": "화면의 금액은 ‘금액 숨기기’로 가릴 수 있어요.",
+    "image": 1,
+    "ratio": "1754 / 953",
+    "caption": "로그인한 본인만 조회·수정",
+    "focus": [
+      0,
+      0,
+      100,
+      100
+    ],
+    "instructions": [
+      "로그인한 본인만 포트폴리오를 조회하고 수정할 수 있어요.",
+      "금액 숨기기로 화면의 금액을 가릴 수 있어요.",
+      "보유 자산과 거래 내역을 함께 확인하세요."
+    ],
+    "note": "",
+    "path": "DAYNOMY / 포트폴리오"
+  },
+  {
+    "id": "feed",
+    "index": "03",
+    "label": "소식",
+    "title": "내 종목의 이야기만, 한곳에.",
+    "description": "채널 필터로 기사·영상·소셜을 골라보세요.",
+    "image": 2,
+    "ratio": "1754 / 788",
+    "caption": "원하는 채널만 골라보기",
+    "focus": [
+      28.8,
+      20.4,
+      47.5,
+      10.6
+    ],
+    "instructions": [
+      "보유 종목을 선택하세요.",
+      "전체·데이노미·X·Threads·YouTube·기타 중 원하는 채널을 선택하세요.",
+      "영상 보기에서 내용을 펼쳐보세요."
+    ],
+    "note": "서비스 소개용 예시 화면입니다.",
+    "path": "DAYNOMY / 내 종목 소식"
+  },
+  {
+    "id": "league",
+    "index": "04",
+    "label": "리그",
+    "title": "수익률 너머, 투자의 이유를 만나요.",
+    "description": "프로필에서 다른 투자자의 보유 이유와 복기를 살펴보세요.",
+    "image": 3,
+    "ratio": "1850 / 1050",
+    "caption": "프로필에서 투자 이유 확인",
+    "focus": [
+      86,
+      46.2,
+      11.4,
+      8.2
+    ],
+    "instructions": [
+      "주간 수익률과 순위를 살펴보세요.",
+      "프로필에서 투자 이유와 복기를 읽어보세요.",
+      "투자리그 봇과 나의 생각을 기록하세요."
+    ],
+    "note": "지난주 확정 순위 화면입니다.",
+    "path": "DAYNOMY / 투자 리그"
+  }
+];
+var team = [
+  ["\uC740\uC624", "\uAE40\uD76C\uC601", "Huiyeongkim", "euno"],
+  ["\uCE74\uC57C", "\uCD5C\uC11C\uC601", "choiyoung69", "kaya"],
+  ["\uC8FC\uB2C8", "\uC774\uD574\uC120", "haeseonlee", "juni"],
+  ["\uB85C\uBBF8", "\uBC15\uD6A8\uBBF8", "parkhyomi", "romi"]
+];
+
+var $ = (s, root = document) => root.querySelector(s);
+var $$ = (s, root = document) => [...root.querySelectorAll(s)];
+var escapeHTML = (value) => String(value).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+var A = window.DAYNOMY_ASSETS;
+var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+var coarse = matchMedia("(pointer:coarse)").matches;
+var gs = window.gsap;
+var sans = '"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif';
+var engines = {};
+var ray = new THREE.Raycaster();
+var ndc = new THREE.Vector2();
+var pointer = { x: innerWidth / 2, y: innerHeight / 2 };
+var animate = (target, vars) => gs.to(target, { ...vars, duration: reduced ? 0 : vars.duration, delay: reduced ? 0 : vars.delay });
+function mark(name, value) {
+  document.body.dataset[name] = String(value);
+}
+function renderer(host, { alpha = false, antialias = true } = {}) {
+  const r = new THREE.WebGLRenderer({ alpha, antialias, powerPreference: "high-performance" });
+  r.setPixelRatio(Math.min(devicePixelRatio, 2));
+  r.setSize(host.clientWidth, host.clientHeight);
+  r.setClearColor(789517, alpha ? 0 : 1);
+  r.outputColorSpace = THREE.SRGBColorSpace;
+  host.prepend(r.domElement);
+  r.domElement.addEventListener("webglcontextlost", (e) => {
+    e.preventDefault();
+    const p = document.createElement("p");
+    p.className = "status-message";
+    p.textContent = "\uADF8\uB798\uD53D \uC5F0\uACB0\uC774 \uC911\uB2E8\uB410\uC5B4\uC694. \uB2E4\uB978 \uD654\uBA74\uC744 \uBCF4\uAC70\uB098 \uC0C8\uB85C\uACE0\uCE68\uD574 \uC8FC\uC138\uC694.";
+    host.append(p);
+  });
+  return r;
+}
+function texture(canvas2) {
+  const t = new THREE.CanvasTexture(canvas2);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.minFilter = THREE.LinearFilter;
+  t.magFilter = THREE.LinearFilter;
+  t.generateMipmaps = false;
+  return t;
+}
+function canvas(w, h) {
+  const c = document.createElement("canvas");
+  c.width = w;
+  c.height = h;
+  return [c, c.getContext("2d", { willReadFrequently: true })];
+}
+function image(src) {
+  return new Promise((resolve) => {
+    const i = new Image();
+    i.onload = () => resolve(i);
+    i.onerror = () => resolve(null);
+    i.src = src;
+  });
+}
+function hitAt(e, cam, meshes, dom) {
+  const r = dom.getBoundingClientRect();
+  ndc.set((e.clientX - r.left) / r.width * 2 - 1, -(e.clientY - r.top) / r.height * 2 + 1);
+  ray.setFromCamera(ndc, cam);
+  return ray.intersectObjects(meshes, false)[0];
+}
+function startLoop(engine) {
+  if (engine.running) return;
+  engine.running = true;
+  engine.last = performance.now();
+  const frame = (now) => {
+    if (!engine.running) return;
+    engine.raf = requestAnimationFrame(frame);
+    const dt = Math.min(0.05, (now - engine.last) / 1e3);
+    engine.last = now;
+    if (!document.hidden) engine.render(now, dt);
+  };
+  engine.raf = requestAnimationFrame(frame);
+}
+function stopLoop(engine) {
+  if (!engine) return;
+  engine.running = false;
+  cancelAnimationFrame(engine.raf);
+  engine.leave?.();
+}
+function showDialog(dialog) {
+  dialog.showModal();
+  animate(dialog, { opacity: 1, scale: 1, y: 0, startAt: { opacity: 0, scale: 0.94, y: 20 }, duration: 0.9, ease: "expo.out" });
+}
+$$("dialog [data-close]").forEach((b) => b.onclick = () => b.closest("dialog").close());
+$$("dialog").forEach((d) => d.addEventListener("click", (e) => {
+  if (e.target === d) {
+    const r = d.getBoundingClientRect();
+    if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) d.close();
+  }
+}));
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    $$("dialog[open]").at(-1)?.close();
+    engines.news?.close();
+  }
+});
+async function buildNews() {
+  const host = $("#news-canvas"), r = renderer(host, { alpha: true, antialias: !coarse }), scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(60, host.clientWidth / host.clientHeight, 0.1, 100);
+  cam.position.z = 12;
+  const group = new THREE.Group();
+  scene.add(group);
+  const meshes = [], images = await Promise.all(A.news.map(image));
+  const state = { mode: "intro", intro: 0, spin: 1, expand: 0, band: 0, chosen: -1, detailsOpen: false };
+  let width = host.clientWidth, height = host.clientHeight, radius = 250, plane = 104, centerX = 0, centerY = 0, px = (v) => v;
+  let auto = !reduced, drag = null, velocity = { x: 0, y: 0 }, angle = { x: 0, y: 0 }, smooth = { x: 0, y: 0 }, hover = -1, dirty = false, lastPoint = null, pinchDistance = 0;
+  const touches =  new Map();
+  for (const n of news) {
+    const [c, ctx] = canvas(640, 360);
+    paintNewsCover(ctx, n, images, sans);
+    const material = new THREE.MeshBasicMaterial({ map: texture(c), transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false });
+    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), material);
+    mesh.userData = { index: n.index, pos: new THREE.Vector3(...spherePoint(n.index, news.length)), introScale: 0.01 };
+    group.add(mesh);
+    meshes.push(mesh);
+  }
+  function resize() {
+    width = host.clientWidth;
+    height = host.clientHeight;
+    r.setSize(width, height);
+    cam.aspect = width / height;
+    cam.updateProjectionMatrix();
+    px = (v) => v * 2 * 12 * Math.tan(Math.PI / 6) / height;
+    plane = width <= 640 ? 86 : 124;
+    radius = width <= 640 ? width / 2 - 28 - plane / 2 : Math.min(250, width * 0.21);
+    centerX = width > 640 ? width * 0.21 : 0;
+    centerY = width <= 640 ? -height * 0.14 : -height * 0.035;
+  }
+  resize();
+  new ResizeObserver(resize).observe(host);
+  function caption(i) {
+    if (state.chosen >= 0) {
+      gs.set(".hover-caption", { opacity: 0 });
+      return;
+    }
+    if (i === hover) return;
+    hover = i;
+    const el = $(".hover-caption");
+    gs.killTweensOf(el);
+    if (i < 0) {
+      animate(el, { opacity: 0, y: -8, duration: 0.25 });
+      return;
+    }
+    el.innerHTML = `${escapeHTML(news[i].title)}<span>${escapeHTML(news[i].category)}</span>`;
+    gs.fromTo(el, { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: reduced ? 0 : 0.6, ease: "expo.out" });
+  }
+  const chosenMesh = () => state.chosen < 0 ? null : meshes[state.chosen];
+  function overview(open) {
+    if (state.chosen < 0) return;
+    state.detailsOpen = open;
+    const el = $(".overview"), n = news[state.chosen];
+    const publishedDate = n.publishedAt.slice(0, 10).replaceAll("-", ".");
+    $("h2", el).textContent = n.title;
+    $(".meta", el).innerHTML = `${escapeHTML(n.source)} · ${escapeHTML(n.category)} · <time datetime="${escapeHTML(n.publishedAt)}">${publishedDate} 발행</time>`;
+    $(".news-published").innerHTML = `${escapeHTML(n.source)} · <time datetime="${escapeHTML(n.publishedAt)}">${publishedDate} 발행</time>`;
+    $(".tags", el).innerHTML = `<a href="${escapeHTML(n.href)}" target="_blank" rel="noopener noreferrer">daynomy.com에서 기사 읽기 ↗</a>`;
+    $(".news-cover-hit").setAttribute("aria-label", `${n.title} · 상세 ${open ? "닫기" : "열기"}`);
+    $(".news-cover-hit").setAttribute("aria-expanded", String(open));
+    $(".news-published").hidden = open;
+    el.inert = !open;
+    gs.killTweensOf(el);
+    gs.killTweensOf(state, "band");
+    if (open) {
+      el.style.visibility = "visible";
+      animate(el, { opacity: 1, y: 0, duration: 0.3 });
+    } else {
+      animate(el, { opacity: 0, duration: 0.2, onComplete: () => {
+        el.style.visibility = "hidden";
+      } });
+    }
+    animate(state, { band: Number(open), duration: 0.5, ease: "power4.out" });
+    mark("newsOverview", open);
+  }
+  function close() {
+    if (state.chosen < 0 || state.closing) return;
+    state.closing = true;
+    $(".news-cover-hit").hidden = true;
+    overview(false);
+    $(".news-selected").inert = true;
+    gs.set(".news-selected", { autoAlpha: 0 });
+    animate(state, { expand: 0, duration: 0.8, ease: "power4.out", onComplete: () => {
+      state.chosen = -1;
+      state.closing = false;
+    } });
+    $(".hero-copy").inert = false;
+    animate(".hero-copy", { opacity: 1, duration: 0.5 });
+    caption(-1);
+    mark("newsZoom", false);
+  }
+  function select(i) {
+    if (state.closing || state.chosen === i) return;
+    if (state.mode !== "sphere") finishIntro();
+    state.chosen = i;
+    $(".news-cover-hit").hidden = false;
+    auto = false;
+    velocity.x = velocity.y = 0;
+    overview(false);
+    $(".news-selected").inert = false;
+    gs.set(".news-selected", { autoAlpha: 1 });
+    animate(state, { expand: 1, duration: 0.8, ease: "power4.out" });
+    $(".hero-copy").inert = true;
+    animate(".hero-copy,.hover-caption", { opacity: 0, duration: 0.3 });
+    mark("newsZoom", true);
+  }
+  $(".news-cover-hit").onclick = () => overview(!state.detailsOpen);
+  function interaction() {
+    auto = false;
+  }
+  host.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0) return;
+    interaction();
+    touches.set(e.pointerId, [e.clientX, e.clientY]);
+    if (touches.size === 2) {
+      const ps = [...touches.values()];
+      pinchDistance = Math.hypot(ps[0][0] - ps[1][0], ps[0][1] - ps[1][1]);
+    }
+    drag = { id: e.pointerId, x: e.clientX, y: e.clientY, startX: e.clientX, startY: e.clientY, path: 0 };
+    host.setPointerCapture(e.pointerId);
+    host.style.cursor = "grabbing";
+  });
+  host.addEventListener("pointermove", (e) => {
+    lastPoint = e;
+    dirty = true;
+    if (touches.has(e.pointerId)) touches.set(e.pointerId, [e.clientX, e.clientY]);
+    if (touches.size === 2) {
+      const ps = [...touches.values()], d = Math.hypot(ps[0][0] - ps[1][0], ps[0][1] - ps[1][1]);
+      velocity.x += (d - pinchDistance) * 2e-4;
+      pinchDistance = d;
+      return;
+    }
+    if (drag && e.pointerId === drag.id) {
+      const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+      drag.path += Math.hypot(dx, dy);
+      if (state.chosen < 0) {
+        velocity.x += dx * 1e-3;
+        velocity.y += dy * 1e-3;
+      }
+      drag.x = e.clientX;
+      drag.y = e.clientY;
+    }
+  });
+  host.addEventListener("pointerup", (e) => {
+    touches.delete(e.pointerId);
+    if (!drag || e.pointerId !== drag.id) return;
+    const click = Math.hypot(e.clientX - drag.startX, e.clientY - drag.startY) < 6 && drag.path < 10;
+    drag = null;
+    host.style.cursor = "grab";
+    if (click) {
+      const h = hitAt(e, cam, meshes.filter((m) => m.material.opacity > 0.4), r.domElement);
+      if (state.chosen >= 0) {
+        if (h?.object.userData.index === state.chosen) overview(!state.detailsOpen);
+        else close();
+      } else if (h) select(h.object.userData.index);
+      else close();
+    }
+  });
+  host.addEventListener("pointercancel", (e) => {
+    touches.delete(e.pointerId);
+    drag = null;
+  });
+  host.addEventListener("pointerleave", () => {
+    if (!drag) caption(-1);
+  });
+  host.addEventListener("wheel", interaction, { passive: true });
+  let timeline = null, circleAngle = 0;
+  function finishIntro() {
+    timeline?.kill();
+    state.mode = "sphere";
+    state.intro = 1;
+    meshes.forEach((m) => {
+      m.material.opacity = 1;
+      m.userData.introScale = 1;
+    });
+    gs.set([".intro-word", ".load-count"], { opacity: 0 });
+    gs.set(".hero-copy", { opacity: 1 });
+    mark("intro", "complete");
+  }
+  if (reduced) finishIntro();
+  else {
+    state.mode = "circle";
+    gs.set(".hero-copy", { opacity: 0 });
+    gs.set(".intro-word", { opacity: 1 });
+    timeline = gs.timeline({ paused: true });
+    meshes.slice(0, 10).forEach((m, i) => {
+      timeline.to(m.material, { opacity: 1, duration: 1 }, i * 0.1);
+      timeline.to(m.userData, { introScale: 1, duration: 1, ease: "back.out(1.7)" }, i * 0.1);
+    });
+    timeline.to(state, { spin: 7.3, duration: 1, ease: "power2.in" }, 1.3).to(".intro-word", { opacity: 0, duration: 0.75 }, 2.1).call(() => {
+      state.mode = "collapse";
+    }, null, 2.1).to(state, { intro: 1, duration: 1.25, ease: "power2.inOut" }, 2.1).call(() => {
+      state.mode = "explode";
+      state.intro = 0;
+      meshes.forEach((m) => { m.material.opacity = 1; });
+    }, null, 3.55).to(state, { intro: 1, duration: 1, ease: "power3.out" }, 3.55).to(".hero-copy", { opacity: 1, duration: 1, ease: "expo.out" }, 3.7).call(finishIntro, null, 4.55);
+  }
+  if (timeline) {
+    const introObserver = new IntersectionObserver((entries) => {
+      if (entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= .55)) {
+        timeline.play();
+        introObserver.disconnect();
+      }
+    }, { threshold: [0, .55] });
+    introObserver.observe(host);
+  }
+  const engine = { resize, select, close, leave() {
+    close();
+    caption(-1);
+  }, render(now, dt) {
+    const v = new THREE.Vector3();
+    if (state.mode === "sphere" && state.chosen < 0) {
+      velocity.x *= 0.94;
+      velocity.y *= 0.94;
+      angle.x += velocity.x;
+      angle.y += velocity.y;
+      const sx = smooth.x, sy = smooth.y;
+      smooth.x += (angle.x - smooth.x) * 0.11;
+      smooth.y += (angle.y - smooth.y) * 0.11;
+      group.quaternion.premultiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), smooth.x - sx));
+      group.quaternion.premultiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), smooth.y - sy));
+      if (auto) group.quaternion.premultiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(Math.sin(0.4014), Math.cos(0.4014), 0), 1e-3 * dt * 60));
+    }
+    circleAngle += 0.5 * Math.PI / 180 * state.spin * dt * 60;
+    const inv = group.quaternion.clone().invert();
+    const base = new THREE.Vector3(px(centerX), px(centerY), 0).applyQuaternion(inv);
+    for (const m of meshes) {
+      const i = m.userData.index;
+      let sc = plane, opacity = 1;
+      if (["intro", "circle", "collapse"].includes(state.mode)) {
+        const a = -Math.PI / 2 + i * Math.PI / 5 + circleAngle, rr = 240 * (width <= 640 ? 0.75 : 1);
+        v.set(px(Math.cos(a) * rr), px(Math.sin(a) * rr), 0);
+        sc = 70 * m.userData.introScale;
+        opacity = i < 10 ? m.material.opacity : 0;
+        if (state.mode === "intro") opacity = 0;
+        if (state.mode === "collapse") {
+          v.multiplyScalar(1 - state.intro);
+          v.z = px(i * 1.5 * state.intro);
+          sc += (plane * 120 / 82 - sc) * state.intro;
+        }
+      } else {
+        v.copy(m.userData.pos).multiplyScalar(px(radius));
+        if (state.mode === "explode") {
+          const f = state.intro * (1 + 0.1 * Math.sin(Math.PI * state.intro));
+          v.multiplyScalar(f);
+          sc = plane * 120 / 82 + (plane - plane * 120 / 82) * state.intro;
+        }
+        v.add(base);
+        if (state.expand > 0) {
+          if (state.chosen === i) {
+            const reserved = Math.max(235, $(".overview").offsetHeight + 98) * state.band, remaining = height - reserved;
+            let h = remaining * 0.7, w = h * 16 / 9;
+            w = Math.min(w, width - 32);
+            h = w * 9 / 16;
+            const target = new THREE.Vector3(0, px(reserved / 2), 0).applyQuaternion(inv);
+            v.lerp(target, state.expand);
+            sc += (w - sc) * state.expand;
+            m.renderOrder = 100;
+          } else {
+            v.sub(base).multiplyScalar(1 + 0.8 * state.expand).add(base);
+            opacity = 1 - 0.9 * state.expand;
+            m.renderOrder = 0;
+          }
+        } else m.renderOrder = 0;
+      }
+      if (state.mode === "sphere" && state.expand === 0) v.addScaledVector(base, -v.clone().applyQuaternion(group.quaternion).z / 12);
+      m.position.copy(v);
+      m.scale.set(px(sc), px(sc * 9 / 16), 1);
+      m.quaternion.copy(inv);
+      if (!["circle", "collapse"].includes(state.mode)) m.material.opacity = opacity;
+    }
+    group.updateMatrixWorld(true);
+    if (state.chosen >= 0 && !state.closing) {
+      const selected = chosenMesh(), point = selected.getWorldPosition(new THREE.Vector3());
+      const projected = point.clone().project(cam), scale = 12 / (12 - point.z);
+      const coverWidth = selected.scale.x / px(1) * scale, coverHeight = coverWidth * 9 / 16;
+      Object.assign($(".news-cover-hit").style, {
+        left: `${(projected.x + 1) * width / 2 - coverWidth / 2}px`,
+        top: `${(1 - projected.y) * height / 2 - coverHeight / 2}px`,
+        width: `${coverWidth}px`, height: `${coverHeight}px`
+      });
+      const coverBottom = (1 - projected.y) * height / 2 + coverHeight / 2;
+      Object.assign($(".overview").style, {
+        top: `${coverBottom + (width <= 640 ? 16 : 24)}px`, bottom: "auto"
+      });
+    }
+    if (state.mode === "sphere" && state.expand === 0) {
+      const cards = meshes.map((m) => {
+        const world = m.getWorldPosition(new THREE.Vector3()), p = world.clone().project(cam), scale = 12 / (12 - world.z);
+        return { id: m.userData.index, x: p.x * width / 2, y: p.y * height / 2, width: plane * scale, height: plane * scale * 9 / 16, depth: world.z };
+      });
+      const shown = new Set(unobscuredCards(cards));
+      for (const m of meshes) {
+        const visible = shown.has(m.userData.index);
+        m.userData.visibility ??= 1;
+        m.userData.visibility += (Number(visible) - m.userData.visibility) * 0.15;
+        m.material.opacity = m.userData.visibility;
+      }
+      mark("newsVisible", shown.size);
+    }
+    if (dirty && !drag && state.mode === "sphere") {
+      dirty = false;
+      const h = hitAt(lastPoint, cam, meshes.filter((m) => m.material.opacity > 0.4), r.domElement), i = h ? h.object.userData.index : -1;
+      caption(i);
+      host.style.cursor = i >= 0 ? "pointer" : "grab";
+    }
+    r.render(scene, cam);
+  } };
+  return engine;
+}
+function buildGuideHTML() {
+  const progress = $(".guide-progress");
+  progress.innerHTML = steps.map((step) => `<a href="#step-${step.id}" data-step="${step.id}">${step.label}</a>`).join("");
+  $("#guide-steps").innerHTML = steps.map((step, i) => {
+    const [x, y, width, height] = step.focus;
+    const aspect = step.ratio.split("/").map(Number).reduce((a, b) => a / b);
+    return `<section class="guide-step feature-section" id="step-${step.id}" aria-labelledby="feature-${step.id}">
+      <header class="feature-heading"><p class="feature-label">${step.label}</p><h2 id="feature-${step.id}">${escapeHTML(step.title)}</h2><p class="feature-description">${step.description}</p></header>
+      <figure class="feature-visual" style="--capture-ratio:${aspect}">
+        <figcaption class="feature-caption"><span>${step.caption}</span></figcaption>
+        <button class="feature-screen" data-preview="${i}" aria-label="${step.label} 화면 확대">
+          <span class="feature-capture" style="aspect-ratio:${step.ratio}">
+            <img src="${A.screens[step.image].src}" alt="${A.screens[step.image].alt}" loading="lazy" decoding="async">
+            <span class="feature-focus" style="left:${x}%;top:${y}%;width:${width}%;height:${height}%" aria-hidden="true"></span>
+          </span>
+        </button>
+        <svg class="feature-leader" aria-hidden="true"><path/><circle r="3"/></svg>
+      </figure>
+
+    </section>`;
+  }).join("") + '<section id="reflection" aria-label="투자 기록 복기">' + $("#bot-showcase").innerHTML + "</section>";
+  const slots = $$(".feature-visual");
+  function connectFeature(slot) {
+    const capture = $(".feature-capture", slot), img = $("img", slot);
+    if (!img.naturalWidth) return;
+    const step = steps[Number($(".feature-screen", slot).dataset.preview)];
+    const fill = step.id === "analysis" ? .9 : .96;
+    const scale = Math.min(capture.clientWidth * fill / img.naturalWidth, capture.clientHeight * fill / img.naturalHeight);
+    const imageWidth = img.naturalWidth * scale, imageHeight = img.naturalHeight * scale;
+    const [fx, fy, fw, fh] = step.focus;
+    Object.assign($(".feature-focus", slot).style, {
+      left: `${(capture.clientWidth - imageWidth) / 2 + imageWidth * fx / 100}px`,
+      top: `${(capture.clientHeight - imageHeight) / 2 + imageHeight * fy / 100}px`,
+      width: `${imageWidth * fw / 100}px`, height: `${imageHeight * fh / 100}px`
+    });
+    const caption = $(".feature-caption", slot);
+    caption.style.transform = "";
+    const box = slot.getBoundingClientRect();
+    const screen = $(".feature-screen", slot).getBoundingClientRect();
+    const focus = $(".feature-focus", slot).getBoundingClientRect();
+    const label = $("span", caption).getBoundingClientRect();
+    const x = focus.right - box.left;
+    const y = focus.top + (step.id === "feed" ? 0 : focus.height / 2) - box.top;
+    const leader = $(".feature-leader", slot);
+    leader.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
+    if (label.left >= screen.right) {
+      const labelX = label.left - box.left - 10;
+      const offset = box.top + y - (label.top + label.height / 2);
+      caption.style.transform = `translateY(${offset}px)`;
+      $("path", leader).setAttribute("d", `M${labelX} ${y} H${x}`);
+    } else {
+      const labelX = label.right - box.left - 8, labelY = label.top - box.top - 8;
+      const bridgeX = screen.right - box.left - 4;
+      $("path", leader).setAttribute("d", `M${labelX} ${labelY} H${bridgeX} V${y} H${x}`);
+    }
+    $("circle", leader).setAttribute("cx", x);
+    $("circle", leader).setAttribute("cy", y);
+  }
+  const leaders = new ResizeObserver(() => slots.forEach(connectFeature));
+  slots.forEach((slot) => { leaders.observe(slot); $("img", slot).addEventListener("load", () => connectFeature(slot)); });
+  $$(".coach-cat,.coach-small-avatar").forEach((el) => el.style.backgroundImage = `url("${A.catSprite}")`);
+  $(".members-grid").innerHTML = team.map(([nickname, name, handle, key]) => `<article class="member"><button class="portrait-link" type="button" data-portrait-state="fallback" aria-label="${nickname} \uBBF8\uBAA8\uC9C0. \uB4DC\uB798\uADF8\uD574 \uB2F9\uAE30\uAC70\uB098 Enter, Space\uB85C \uD754\uB4E4\uC5B4 \uBCF4\uC138\uC694."><img src="${A.team[key]}" alt="${nickname}\uC758 \uBBF8\uBAA8\uC9C0" width="464" height="464" draggable="false"><canvas class="portrait-canvas" aria-hidden="true"></canvas></button><h3><a href="https://github.com/${handle}" target="_blank" rel="noopener noreferrer">${nickname}</a></h3><p class="member-name">${name}</p><a class="github-button" href="https://github.com/${handle}" target="_blank" rel="noopener noreferrer" aria-label="${nickname}(${name}) GitHub \u2014 \uC0C8 \uD0ED">GitHub <span>\u2197</span></a></article>`).join("");
+  function jump(id) {
+    const el = id === "team" ? $("#team") : $("#step-" + id);
+    el?.scrollIntoView({ behavior: reduced ? "instant" : "smooth", block: "start" });
+  }
+  $$("[data-step]").forEach((a) => a.onclick = (e) => {
+    e.preventDefault();
+    jump(a.dataset.step);
+  });
+  $$("[data-preview]").forEach((b) => b.onclick = () => openPreview(Number(b.dataset.preview)));
+  const observer = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) {
+      $$("[data-step]").forEach((a) => a.classList.toggle("active", a.dataset.step === e.target.id.replace("step-", "")));
+    }
+  }, { root: null, rootMargin: "-15% 0px -60% 0px" });
+  $$(".guide-step,#team").forEach((e) => observer.observe(e));
+  let portraitsReady = false;
+  const mountTeam = new IntersectionObserver((es) => {
+    if (portraitsReady || !es.some((e) => e.isIntersecting)) return;
+    portraitsReady = true;
+    $$(".portrait-link").forEach((b) => {
+      if (reduced) {
+        b.disabled = true;
+        return;
+      }
+      mountSoftPortrait(b, $("canvas", b), $("img", b));
+    });
+    mountTeam.disconnect();
+  }, { root: null, rootMargin: "400px" });
+  mountTeam.observe($("#team"));
+  return jump;
+}
+var jumpGuide;
+function openPreview(i) {
+  const d = $("#lightbox"), s = steps[i];
+  $(".dialog-top h2", d).textContent = s.title.replace("\n", " ");
+  $(".dialog-top p", d).textContent = s.note;
+  $(".lightbox-media", d).src = A.screens[s.image].src;
+  $(".lightbox-media", d).alt = A.screens[s.image].alt;
+  $(".dialog-description", d).textContent = s.description;
+  $(".dialog-steps", d).innerHTML = s.instructions.map((x) => "<li>" + x + "</li>").join("");
+  $("#lightbox-jump").onclick = () => {
+    d.close();
+    jumpGuide(s.id);
+  };
+  showDialog(d);
+}
+async function buildAI() {
+  const aiSans = '"Geist","Apple SD Gothic Neo","Malgun Gothic",sans-serif';
+  const host = $("#ai-canvas"), r = renderer(host), scene = new THREE.Scene();
+  scene.background = new THREE.Color(789517);
+  r.toneMapping = THREE.NoToneMapping;
+  const cam = new THREE.PerspectiveCamera(45, host.clientWidth / host.clientHeight, 0.1, 100);
+  cam.position.z = 13;
+  let w = host.clientWidth, h = host.clientHeight, unit = 1, headUnit = 1, outroStart = 1, track = 0, target = 0, travel = 1, touch = null, moved = false, lastInput = performance.now(), sleep = false, phase = 0, blinkAt = performance.now() + 3500, nextReaction = 0;
+  const activity = { reveal: 0, hover: 0, eyes: 1, speed: 1, amplitude: 1, shake: 0, effect: 0, dissolve: 0 }, follow = { x: coarse ? 0 : -.12, y: coarse ? 0 : .16, z: coarse ? 0 : -.035 };
+  let effectRunning = false;
+  const anchor = new THREE.Group(), bot = new THREE.Group();
+  anchor.add(bot);
+  scene.add(anchor);
+  anchor.position.z = -1;
+  const matcap = await new THREE.TextureLoader().loadAsync('assets/7a4b51bfbf8e856b.png');
+  matcap.colorSpace = THREE.SRGBColorSpace;
+  matcap.anisotropy = Math.min(4, r.capabilities.getMaxAnisotropy());
+  const glass = new THREE.MeshMatcapMaterial({ matcap, color: 0xffffff, toneMapped: false });
+  const eyeLight = new THREE.MeshMatcapMaterial({ matcap, color: 0x0b2865, toneMapped: false });
+  const catMeshes = [];
+  const torsoRig = new THREE.Group(), headRig = new THREE.Group();
+  bot.add(torsoRig, headRig);
+  headRig.position.set(0, .12, .03);
+  function mesh(geo, mat, x = 0, y = 0, z = 0, parent = torsoRig) {
+    const o = new THREE.Mesh(geo, mat);
+    o.position.set(x, y, z);
+    parent.add(o);
+    catMeshes.push(o);
+    return o;
+  }
+  const torsoGeometry = new THREE.SphereGeometry(1, 64, 48);
+  torsoGeometry.scale(1.01, .66, .65);
+  const torso = mesh(torsoGeometry, glass, 0, -.70, -.04);
+  const paws = [-1, 1].map(side => {
+    const geometry = new THREE.SphereGeometry(1, 48, 36);
+    geometry.scale(.28, .28, .29);
+    const paw = mesh(geometry, glass, side * .76, -.91, .41);
+    paw.rotation.z = side * -.15;
+    return paw;
+  });
+  const headGeometry = new THREE.SphereGeometry(1, 96, 72);
+  const positions = headGeometry.attributes.position;
+  for (let i = 0; i < positions.count; i++) {
+    const x = positions.getX(i), y = positions.getY(i), z = positions.getZ(i);
+    const left = Math.exp((-.52 * x + .85416626 * y - 1) / .048);
+    const right = Math.exp((.52 * x + .85416626 * y - 1) / .048);
+    const ear = .48 * (left + right);
+    positions.setXYZ(i, x * 1.03 * (1 + ear), y * .88 * (1 + ear), z * .77 * (1 + ear * .42));
+  }
+  positions.needsUpdate = true;
+  headGeometry.computeVertexNormals();
+  const head = mesh(headGeometry, glass, 0, .42, 0, headRig);
+  const eyes = [-.31, .31].map(x => {
+    const geometry = new THREE.SphereGeometry(1, 32, 24);
+    geometry.scale(.095, .14, .046);
+    return mesh(geometry, eyeLight, x, .46, .755, headRig);
+  });
+  const cream = new THREE.MeshStandardMaterial({color:0xfff0d6,roughness:.24,metalness:0});
+  scene.add(new THREE.HemisphereLight(0xeaf4ff,0x75809a,2.4));
+  const softKey=new THREE.DirectionalLight(0xffffff,2.2);softKey.position.set(-3,5,7);scene.add(softKey);
+  const paperRig=new THREE.Group();paperRig.position.set(-.35,-.57,.67);paperRig.rotation.z=-.08;torsoRig.add(paperRig);
+  const sheet=new THREE.Shape();
+  sheet.moveTo(-.43,-.42);sheet.quadraticCurveTo(-.49,-.42,-.49,-.34);
+  sheet.lineTo(-.52,.37);sheet.quadraticCurveTo(-.52,.48,-.42,.44);
+  sheet.quadraticCurveTo(0,.29,.42,.44);sheet.quadraticCurveTo(.52,.48,.51,.36);
+  sheet.lineTo(.43,-.35);sheet.quadraticCurveTo(.42,-.43,.34,-.43);sheet.closePath();
+  const paperGeo=new THREE.ExtrudeGeometry(sheet,{depth:.045,bevelEnabled:true,bevelSegments:4,steps:1,bevelSize:.025,bevelThickness:.025,curveSegments:20});
+  mesh(paperGeo,cream,0,0,0,paperRig);
+  function stroke(points,radius,parent,material=eyeLight){
+    const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));
+    return mesh(new THREE.TubeGeometry(curve,40,radius,12,false),material,0,0,0,parent);
+  }
+  for(const y of [.16,-.08]){
+    stroke([[-.30,y,.085],[0,y-.015,.09],[.26,y-.03,.085]],.043,paperRig);
+    for(const x of [-.30,.26])mesh(new THREE.SphereGeometry(.043,20,16),eyeLight,x,y-(x>0?.03:0),.085,paperRig);
+  }
+  const dollarRig=new THREE.Group();dollarRig.position.set(.47,-.61,.59);dollarRig.rotation.y=.12;torsoRig.add(dollarRig);
+  stroke([[.16,.19,0],[.03,.25,.025],[-.13,.19,.02],[-.16,.08,.03],[-.04,.015,.04],[.10,-.035,.04],[.16,-.13,.025],[.08,-.23,.015],[-.07,-.23,0],[-.17,-.17,0]],.047,dollarRig);
+  stroke([[0,.32,0],[0,-.32,0]],.032,dollarRig);
+  paws[0].position.set(-.79,-.92,.82);
+  paws[1].position.set(.79,-.92,.77);
+
+  const floorGlow = new THREE.Mesh(new THREE.PlaneGeometry(3, 3), new THREE.ShaderMaterial({
+    transparent: true, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending,
+    vertexShader: 'varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+    fragmentShader: 'varying vec2 vUv;void main(){float d=length(vUv-.5)*2.;float core=exp(-d*d*6.)*.24;float rim=exp(-pow((d-.70)/.035,2.))*.25;float a=(core+rim)*(1.-smoothstep(.82,1.,d));gl_FragColor=vec4(.015,.45,1.,a);}'
+  }));
+  floorGlow.rotation.x = -Math.PI / 2;
+  floorGlow.position.set(0, -1.43, .02);
+  bot.add(floorGlow);
+  const bounds = new THREE.Box3().setFromObject(bot), center = bounds.getCenter(new THREE.Vector3());
+  bot.position.sub(center);
+  const gaze = new THREE.Vector2();
+  const revealUniforms = { uReveal: { value: 0 }, uHover: { value: 0 }, uHit: { value: new THREE.Vector3() }, uTime: { value: 0 } };
+  for (const mat of [glass, eyeLight]) {
+    mat.onBeforeCompile = (shader) => {
+      Object.assign(shader.uniforms, revealUniforms);
+      shader.vertexShader = "varying vec3 vLocal;\n" + shader.vertexShader;
+      shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\nvLocal=(modelMatrix*vec4(position,1.)).xyz;");
+      shader.fragmentShader = `varying vec3 vLocal;uniform float uReveal,uHover,uTime;uniform vec3 uHit;float hash21(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}float noise2(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash21(i),hash21(i+vec2(1,0)),f.x),mix(hash21(i+vec2(0,1)),hash21(i+vec2(1,1)),f.x),f.y);}
+` + shader.fragmentShader;
+      shader.fragmentShader = shader.fragmentShader.replace("#include <clipping_planes_fragment>", `#include <clipping_planes_fragment>
+float front=mix(-3.8,4.4,uReveal)+noise2(vLocal.xz*3.+uTime*.25)*.95*(1.-uReveal);if(vLocal.y>front)discard;float meniscus=pow(1.-clamp((front-vLocal.y)/.97,0.,1.),3.);`);
+      shader.fragmentShader = shader.fragmentShader.replace("#include <opaque_fragment>", `float glow=pow(1.-smoothstep(0.,1.09,length(vLocal-uHit)),3.)*uHover*.12;outgoingLight+=vec3(.086,.13,1.)*(meniscus*1.4+glow);outgoingLight=mix(outgoingLight,outgoingLight+vec3(.56,.63,1.)*.45,meniscus);
+#include <opaque_fragment>`);
+    };
+    if (mat === glass) {
+      const setupGlass = mat.onBeforeCompile;
+      mat.onBeforeCompile = shader => {
+        setupGlass(shader);
+        shader.fragmentShader = shader.fragmentShader.replace("#include <opaque_fragment>", `
+float glassLuma=dot(outgoingLight,vec3(.2126,.7152,.0722));
+outgoingLight=mix(outgoingLight,vec3(glassLuma),.18);
+#include <opaque_fragment>`);
+      };
+    }
+    mat.customProgramCacheKey = () => mat === glass ? "daynomy-reference-cat-soft-blue-v5" : "daynomy-reference-cat-eyes-v4";
+  }
+  const targetRT = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType });
+  const lensUniforms = { t: { value: targetRT.texture }, resolution: { value: new THREE.Vector2() }, center: { value: new THREE.Vector2(0.5, 0.5) }, radius: { value: 0 }, dissolve: { value: 0 }, glow: { value: 11 } };
+  const lens = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.ShaderMaterial({ transparent: true, depthWrite: false, uniforms: lensUniforms, vertexShader: "void main(){gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}", fragmentShader: `precision highp float;uniform sampler2D t;uniform vec2 resolution,center;uniform float radius,dissolve,glow;void main(){vec2 uv=gl_FragCoord.xy/resolution;vec2 dp=(uv-center)*resolution;float nd=length(dp)/max(radius,1.);if(nd>1.)discard;float fadeDist=1.-smoothstep(0.,.8,dissolve);vec2 base=uv-(uv-center)*(.15*nd*nd+smoothstep(.85,1.,nd)*.2344)*fadeDist;vec3 c=vec3(0.),weights=vec3(0.);for(int i=0;i<8;i++){float s=float(i)/7.;vec3 wt=exp(-pow((vec3(s)-vec3(.2,.5,.8))*4.,vec3(2.)));vec2 off=normalize(dp+vec2(.001))/resolution*(s-.5)*1.64*.004*resolution.y*smoothstep(.6,1.,nd)*fadeDist;c+=texture2D(t,base+off).rgb*wt;weights+=wt;}c/=weights;float lights=1.-smoothstep(0.,.6,dissolve);float nova=exp(-nd*nd/(4.*glow*.003))*.285*11./17.*1.15;float ring=exp(-pow((nd-.49)/.08,2.))*.9*11./17.*1.8;float rim=exp(-pow((nd-.483)/.004,2.));float edge=exp(-pow((nd-.478)/.06,2.))*1.053;c+=(vec3(nova)+vec3(.145,.169,.655)*(ring+edge)+vec3(rim)*.35)*lights;float alpha=(1.-smoothstep(.8,1.,dissolve))*(1.-smoothstep(.98,1.,nd));gl_FragColor=vec4(c,alpha);
+#include <colorspace_fragment>}` }));
+  lens.position.z = -7.9;
+  lens.visible = false;
+  scene.add(lens);
+  const textGroup = new THREE.Group();
+  textGroup.position.z = -8;
+  scene.add(textGroup);
+  const blocks = [];
+  const screenMeshes = [];
+  const screenImages = await Promise.all(A.screens.map((screen) => image(screen.src)));
+  const mobile = () => w <= 640;
+  function linePlane(text, size, { color = "#ededeb", font = aiSans, weight = 400, italic = false, width = 0 } = {}) {
+    const measure = document.createElement("canvas").getContext("2d", { willReadFrequently: true });
+    measure.font = `${italic ? "italic " : ""}${weight} ${size}px ${font}`;
+    const tw = Math.ceil(measure.measureText(text).width) + 8, th = Math.ceil(size * 1.6), ratio = Math.min(devicePixelRatio, 2);
+    const [c, ctx] = canvas(Math.ceil(tw * ratio), Math.ceil(th * ratio));
+    ctx.scale(ratio, ratio);
+    ctx.font = measure.font;
+    ctx.fillStyle = color;
+    ctx.textBaseline = "middle";
+    ctx.fillText(text, 4, th / 2);
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ map: texture(c), transparent: true, depthWrite: false }));
+    textGroup.add(p);
+    return { mesh: p, width: tw, height: th, shift: 0, text };
+  }
+  const data = [
+  [
+    "내 투자에 미치는 영향",
+    [
+      "보유 비중을 반영한 예상 영향과",
+      "분석의 근거를 함께 확인합니다."
+    ],
+    1,
+    0
+  ],
+  [
+    "내 포트폴리오, 본인만 접근",
+    [
+      "로그인한 본인만 조회·수정하고,",
+      "화면의 금액은 가릴 수 있어요."
+    ],
+    -1,
+    1
+  ],
+  [
+    "내 종목의 소식을 한곳에",
+    [
+      "기사·영상·소셜에서 내 종목을 찾고,",
+      "원하는 채널만 골라봅니다."
+    ],
+    1,
+    2
+  ],
+  [
+    "다른 투자자의 생각도 함께",
+    [
+      "주간 수익률과 공개한 종목을 보고,",
+      "투자 이유와 복기를 읽어보세요."
+    ],
+    -1,
+    3
+  ]
+];
+  function screenPlane(previewIndex, maxWidth, maxHeight) {
+    const step = steps[previewIndex], im = screenImages[step.image];
+    if (!im) return null;
+    const aspect = 16 / 10;
+    const width = Math.min(maxWidth, maxHeight * aspect), height = width / aspect;
+    const [c, ctx] = canvas(900, Math.round(900 / aspect));
+    ctx.beginPath();
+    ctx.roundRect(0, 0, c.width, c.height, 16);
+    ctx.clip();
+    ctx.fillStyle = "#fff";
+    ctx.fillRect(0, 0, c.width, c.height);
+    const fit = Math.min(c.width * .9 / im.width, c.height * .9 / im.height);
+    ctx.drawImage(im, (c.width - im.width * fit) / 2, (c.height - im.height * fit) / 2, im.width * fit, im.height * fit);
+    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ map: texture(c), transparent: true, depthWrite: false }));
+    mesh.userData.preview = previewIndex;
+    textGroup.add(mesh);
+    screenMeshes.push(mesh);
+    return { mesh, width, height, shift: 0 };
+  }
+  function textLayout() {
+    textGroup.children.slice().forEach((o) => {
+      o.geometry.dispose();
+      o.material.map.dispose();
+      o.material.dispose();
+      textGroup.remove(o);
+    });
+    blocks.length = 0;
+    screenMeshes.length = 0;
+    const phone = mobile(), fs = phone ? Math.min(32, (w - 40) / 15) : Math.min(54, w * 0.042), headerLines = ["흩어진 시장의 소식이", "내 포트폴리오를 만나,", "나의 투자 맥락이 됩니다."];
+    const headBlock = { x: 0, lines: [], width: w };
+    headerLines.forEach((text, i) => {
+      const l = linePlane(text, fs, { weight: 600 });
+      l.x = 0;
+      l.y = i < 2 ? i === 0 ? 230 : 165 : -165;
+      l.side = i < 2 ? 1 : -1;
+      l.baseY = l.y;
+      l.mesh.userData.headline = true;
+      headBlock.lines.push(l);
+    });
+    blocks.push(headBlock);
+    let x = w / 2 + (phone ? 70 : 200);
+    for (let i = 0; i < data.length; i++) {
+      const [title, body, side, previewIndex] = data[i], block = { x, lines: [], width: phone ? Math.min(w - 44, 320) : 420 };
+      const compact = h < 860;
+      const texts = [{ text: title, size: phone ? 20 : compact ? 22 : 27, color: "#ededeb", weight: 600 }, ...body.map((text) => ({ text, size: phone ? 14 : compact ? 15 : 18, color: "#b0b8c1", weight: 400 }))];
+      const lines = texts.map(t => linePlane(t.text, t.size, t));
+      const gap = phone || compact ? 14 : 20, bottom = 30;
+      const copyHeight = lines.reduce((sum, line) => sum + line.height, 0) + 20;
+      const edgeMargin = phone ? 64 : 60;
+      const bendRoom = Math.min(150, h * .12);
+      const available = h / 2 - bottom - edgeMargin - copyHeight - gap - bendRoom;
+      const screen = screenPlane(previewIndex, phone ? 290 : 360, Math.max(48, Math.min(phone ? 150 : 195, available)));
+      const total = (screen?.height || 0) + gap + copyHeight;
+      const top = side > 0 ? bottom + total : -bottom;
+      block.maxShift = Math.max(0, h / 2 - edgeMargin - bottom - total);
+      let y = top;
+      if (screen) {
+        screen.x = block.width / 2;
+        screen.y = y - screen.height / 2;
+        screen.baseY = screen.y;
+        screen.side = side;
+        block.lines.push(screen);
+        y -= screen.height + gap;
+      }
+      lines.forEach((line, j) => {
+        line.x = block.width / 2;
+        line.y = y - line.height / 2;
+        line.baseY = line.y;
+        line.side = side;
+        block.lines.push(line);
+        y -= line.height + (j === 0 ? 12 : 4);
+      });
+      blocks.push(block);
+      x += Math.max(0.62 * block.width, phone ? 150 : 200) + (phone ? 60 : 90);
+    }
+    outroStart = blocks.at(-1).x + blocks.at(-1).width / 2 + (phone ? 130 : 250);
+    travel = outroStart + 340;
+    $("#ai").style.setProperty("--ai-travel", travel + "px");
+  }
+  function resize() {
+    w = host.clientWidth;
+    h = host.clientHeight;
+    r.setSize(w, h);
+    cam.aspect = w / h;
+    cam.updateProjectionMatrix();
+    unit = 2 * 21 * Math.tan(Math.PI / 8) / h;
+    headUnit = 2 * 14 * Math.tan(Math.PI / 8) / h;
+    const scale = 212 * (w <= 1024 ? 0.85 : w <= 1440 ? 0.9 : 1) * headUnit / (bounds.max.y - bounds.min.y);
+    anchor.scale.setScalar(scale);
+    targetRT.setSize(w * r.getPixelRatio(), h * r.getPixelRatio());
+    lensUniforms.resolution.value.set(w * r.getPixelRatio(), h * r.getPixelRatio());
+    lens.scale.set(w * unit, h * unit, 1);
+    textLayout();
+  }
+  resize();
+  new ResizeObserver(resize).observe(host);
+  function shake() {
+    if (reduced) return;
+    gs.timeline().to(activity, { shake: 0.22, duration: 0.09 }).to(activity, { shake: -0.18, duration: 0.12 }).to(activity, { shake: 0.1, duration: 0.11 }).to(activity, { shake: 0, duration: 0.18 });
+  }
+  function wake() {
+    lastInput = performance.now();
+    if (!sleep) return;
+    sleep = false;
+    animate(activity, { speed: 1, amplitude: 1, duration: 0.8 });
+    gs.killTweensOf(activity, "eyes");
+    activity.eyes = 1;
+    shake();
+    mark("aiSleep", false);
+  }
+  function scroll(delta) {
+    wake();
+    window.scrollBy({ top: delta, behavior: reduced ? "instant" : "smooth" });
+  }
+  host.addEventListener("pointerdown", (e) => {
+    wake();
+    touch = { x: e.clientX, y: e.clientY, path: 0, id: e.pointerId, onCat: Boolean(hitAt(e, cam, catMeshes, r.domElement)) };
+    host.setPointerCapture(e.pointerId);
+  });
+  host.addEventListener("pointermove", (e) => {
+    wake();
+    pointer = { x: e.clientX, y: e.clientY };
+    moved = true;
+    if (touch) {
+      touch.path += Math.hypot(touch.x - e.clientX, touch.y - e.clientY);
+      touch.x = e.clientX;
+      touch.y = e.clientY;
+    }
+  });
+  function burst() {
+    if (activity.reveal < 0.8 || effectRunning || reduced) return;
+    gs.killTweensOf(activity, "effect,dissolve");
+    effectRunning = true;
+    mark("aiBurst", true);
+    activity.effect = 0;
+    activity.dissolve = 0;
+    lens.visible = true;
+    let started = false;
+    gs.to(activity, { effect: 10, duration: 4, ease: "expo.out", onUpdate() {
+      if (activity.effect > 6.14 && !started) {
+        started = true;
+        gs.to(activity, { dissolve: 1, duration: 0.8975, ease: "sine.inOut", onComplete() {
+          lens.visible = false;
+          effectRunning = false;
+          mark("aiBurst", false);
+        } });
+      }
+    } });
+    const base = { x: headRig.rotation.x, y: headRig.rotation.y, z: headRig.rotation.z };
+    if (nextReaction++ % 2 === 0) {
+      gs.timeline().to(headRig.rotation, { x: base.x + .22, y: base.y + .08, duration: .18, ease: "power2.out" }).to(headRig.rotation, { ...base, duration: .75, ease: "elastic.out(1,.5)" });
+      gs.to(activity, { eyes: .12, duration: .15, yoyo: true, repeat: 1 });
+    } else gs.timeline().to(headRig.rotation, { y: base.y - .16, z: base.z - .16, duration: .22, ease: "power2.out" }).to(headRig.rotation, { ...base, duration: .8, ease: "elastic.out(1,.55)" });
+  }
+  host.addEventListener("pointerup", (e) => {
+    if (touch && touch.path < 10) {
+      const botHit = hitAt(e, cam, catMeshes, r.domElement);
+      if (botHit) burst();
+      else {
+        const screenHit = hitAt(e, cam, screenMeshes, r.domElement);
+        if (screenHit) openPreview(screenHit.object.userData.preview);
+      }
+    }
+    touch = null;
+  });
+  host.addEventListener("pointercancel", () => touch = null);
+  $$("[data-ai-move]").forEach((b) => b.onclick = () => scroll(Number(b.dataset.aiMove) * (mobile() ? 310 : 430)));
+  ["keydown", "pointerdown", "pointermove", "touchstart", "wheel"].forEach((type) => window.addEventListener(type, () => {
+    if (engines.ai?.running) wake();
+  }, { passive: true }));
+  const engine = { enter() {
+    wake();
+    gs.killTweensOf(activity, "reveal");
+    activity.reveal = 1;
+    revealUniforms.uReveal.value = 1;
+  }, render(now, dt) {
+    target = scrollTrack($("#ai").getBoundingClientRect().top, travel);
+    track += (target - track) * 0.12;
+    mark("aiProgress", (target / travel).toFixed(3));
+    const ctaOpacity = clamp((track - outroStart) / 220, 0, 1);
+    const outro = ctaOpacity * ctaOpacity * (3 - 2 * ctaOpacity);
+    gs.set(".ai-launch", { opacity: ctaOpacity, visibility: ctaOpacity > 0.05 ? "visible" : "hidden", x: (1 - outro) * 16 });
+
+    if (!coarse && !sleep && activity.reveal > 0.99 && now - lastInput > 3e4) {
+      sleep = true;
+      animate(activity, { eyes: 0.2, speed: 0.35, amplitude: 1.6, duration: 1.6, ease: "power2.inOut" });
+      mark("aiSleep", true);
+    }
+    if (!sleep && now > blinkAt && !reduced) {
+      blinkAt = now + 3e3 + Math.random() * 2e3;
+      gs.to(activity, { eyes: 0.1, duration: 0.18, yoyo: true, repeat: 1 });
+    }
+    const canvasBox = r.domElement.getBoundingClientRect(), localPointer = { x: pointer.x - canvasBox.left, y: pointer.y - canvasBox.top };
+    const blend = 1-Math.exp(-4*dt);
+    let tx = 0, ty = 0, tz = 0;
+    if (moved) {
+      tx = clamp((localPointer.y - h / 2) / (h / 2), -.28, .28);
+      ty = clamp((localPointer.x - w / 2) / (w / 2), -.40, .40);
+      tz = .07 * (localPointer.x - w / 2) / (w / 2);
+    }
+    if (sleep) {
+      tx = 0.42;
+      ty = 0;
+      tz = 0.12;
+    }
+    if (!effectRunning) {
+      headRig.rotation.x += (tx - headRig.rotation.x) * blend;
+      headRig.rotation.y += (ty + activity.shake - headRig.rotation.y) * blend;
+      headRig.rotation.z += (tz - headRig.rotation.z) * blend;
+      headRig.position.x += (ty * .10 - headRig.position.x) * blend;
+    }
+    phase += dt * 1.5 * activity.speed;
+    anchor.position.y += ((reduced ? 0 : Math.sin(phase) * 0.04 * activity.amplitude * activity.reveal) - anchor.position.y) * blend;
+    const wantedGaze = new THREE.Vector2(moved ? clamp((localPointer.x-w/2)/(w*.28),-1,1) : 0, moved ? -clamp((localPointer.y-h/2)/(h*.28),-1,1) : 0);
+    gaze.lerp(wantedGaze,1-Math.exp(-22*dt));
+    eyes.forEach((eye,i) => {
+      const ex=(i===0?-.31:.31)+gaze.x*.20;
+      const ey=.46+gaze.y*.17;
+      const ez=.77*Math.sqrt(Math.max(.2,1-Math.pow(ex/1.03,2)-Math.pow((ey-.42)/.88,2)))+.04;
+      eye.position.set(ex,ey,ez);eye.rotation.y=ex*.42;eye.rotation.x=-(ey-.42)*.4;eye.scale.y=activity.eyes;
+    });
+    const botWorld = new THREE.Vector3();
+    anchor.getWorldPosition(botWorld);
+    const botScreen = botWorld.clone().project(cam);
+    const botText = { x: botScreen.x * w / 2 * unit, y: botScreen.y * h / 2 * unit };
+    const rx = 3.4 * (mobile() ? 0.7875 : 1), ry = 4.0543 * (mobile() ? 0.7875 : 1);
+    let maxShift = 0;
+    for (const block of blocks) {
+      const bx = block.x - track;
+      for (const side of [1, -1]) {
+        const lines = block.lines.filter((l) => l.side === side).sort((a, b) => Math.abs(a.baseY) - Math.abs(b.baseY));
+        let inner = 0;
+        for (let k = 0; k < lines.length; k++) {
+          const l = lines[k], lx = (bx + l.x) * unit, ly = l.baseY * unit;
+          let need = l.mesh.userData.headline ? 0 : keepOut({ x: lx, y: ly, width: l.width * unit, height: l.height * unit, side }, botText, rx, ry, 0.35, inner);
+          if (Number.isFinite(block.maxShift)) need = Math.min(need, block.maxShift * unit);
+          l.shift = reduced ? need : followShift(l.shift, need, inner, k);
+          inner = l.shift;
+          maxShift = Math.max(maxShift, l.shift);
+          l.mesh.position.set(lx, ly + side * l.shift, 0);
+          l.mesh.scale.set(l.width * unit, l.height * unit, 1);
+        }
+      }
+    }
+    mark("magneticShift", maxShift.toFixed(3));
+    const ev = { clientX: pointer.x, clientY: pointer.y };
+    scene.updateMatrixWorld(true);
+    const hit = hitAt(ev, cam, catMeshes, r.domElement);
+    activity.hover += ((hit ? 1 : 0) - activity.hover) * (hit ? 0.1 : 0.05);
+    if (hit) revealUniforms.uHit.value.copy(hit.point);
+    revealUniforms.uReveal.value = activity.reveal;
+    revealUniforms.uHover.value = activity.hover;
+    revealUniforms.uTime.value = now / 1e3;
+    host.style.cursor = touch?.onCat && touch.path > 10 ? "grabbing" : hit && activity.reveal > .8 ? "grab" : hitAt(ev, cam, screenMeshes, r.domElement) ? "pointer" : "grab";
+    if (lens.visible) {
+      anchor.visible = false;
+      lens.visible = false;
+      r.setRenderTarget(targetRT);
+      r.render(scene, cam);
+      r.setRenderTarget(null);
+      anchor.visible = true;
+      lens.visible = true;
+      lensUniforms.radius.value = activity.effect / unit * r.getPixelRatio();
+      lensUniforms.dissolve.value = activity.dissolve;
+    }
+    r.render(scene, cam);
+  } };
+  return engine;
+}
+function fallback(name, error) {
+  console.warn("DAYNOMY: \uADF8\uB798\uD53D \uB300\uC2E0 \uAE30\uBCF8 \uC548\uB0B4\uB97C \uD45C\uC2DC\uD569\uB2C8\uB2E4.", error?.message || error);
+  if (name === "news") {
+    const div = document.createElement("div");
+    div.className = "fallback-news";
+    div.innerHTML = news.map((n) => `<a href="${escapeHTML(n.href)}" target="_blank" rel="noopener noreferrer"><small>${escapeHTML(n.source)}</small>${escapeHTML(n.title)}</a>`).join("");
+    $("#news-canvas").append(div);
+    gs.set(".hero-copy", { opacity: 1 });
+    gs.set([".intro-word", ".load-count"], { opacity: 0 });
+  }
+  if (name === "ai") {
+    $("#ai-canvas").innerHTML = '<div class="fallback-ai"><h2>\uB0B4 \uD3EC\uD2B8\uD3F4\uB9AC\uC624\uB85C \uC77D\uB294 \uC2DC\uC7A5.</h2><p>\uB274\uC2A4\xB7\uACF5\uC2DC\xB7\uC601\uC0C1\uC744 \uBAA8\uC544 \uBCF4\uC720 \uC885\uBAA9\uACFC \uC5F0\uACB0\uD569\uB2C8\uB2E4. AI\uAC00 \uBCF4\uC720 \uBE44\uC911\uC744 \uBC18\uC601\uD574 \uC790\uC0B0\uBCC4 \uC601\uD5A5\uACFC \uD310\uB2E8\uC758 \uADFC\uAC70\uB97C \uD568\uAED8 \uC0B4\uD3B4\uBD05\uB2C8\uB2E4.</p><a href="#guide" class="pill">\uC2E4\uC81C \uD654\uBA74\uC73C\uB85C \uC0AC\uC6A9\uBC95 \uBCF4\uAE30 \u2197</a></div>';
+  }
+  return { render() {
+  }, close() {
+  } };
+}
+window.addEventListener("pointermove", (e) => {
+  pointer = { x: e.clientX, y: e.clientY };
+}, { passive: true });
+document.addEventListener("click", (e) => {
+  if (e.target.closest('a[href^="#"]')) $$("dialog[open]").forEach((d) => d.close());
+});
+try {
+  await Promise.all([document.fonts.load("600 54px Geist"), document.fonts.load("400 19px Pretendard"), document.fonts.load("600 29px Pretendard"), document.fonts.load("650 54px Pretendard")]);
+  await document.fonts.ready;
+  jumpGuide = buildGuideHTML();
+  await Promise.all(Object.entries({ news: buildNews, ai: buildAI }).map(async ([name, build]) => {
+    try {
+      engines[name] = await build();
+    } catch (error) {
+      engines[name] = fallback(name, error);
+    }
+  }));
+  const observer = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      const engine = engines[e.target.dataset.engine];
+      if (e.isIntersecting) {
+        engine.enter?.();
+        startLoop(engine);
+      } else stopLoop(engine);
+    }
+  }, { threshold: 0 });
+  for (const [name, selector] of Object.entries({ news: "#news", ai: ".ai-stage" })) {
+    const el = $(selector);
+    el.dataset.engine = name;
+    observer.observe(el);
+  }
+  if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: "instant" });
+  mark("ready", true);
+} catch (error) {
+  console.error(error);
+  fallback("news", error);
+}
+</script>
+</body></html>
